@@ -1,8 +1,8 @@
-# Make a Name For Yourself
+# Se faire un nom
 
-Git allows you to set some [global configuration settings](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration) that will apply every time you make a commit. For this objective, we will configure two global options:
+Git vous permet de définir certains [paramètres de configuration globale] (https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration) qui s'appliqueront à chaque fois que vous ferez un commit. Pour cet objectif, nous allons configurer deux options globales :
 
-* `user.name` - Your name as it will be displayed on commit messages
-* `user.email` - Your contact email
+* `user.name` - Votre nom tel qu'il sera affiché dans les messages de commit.
+* `user.email` - Votre email de contact
 
-Once you've configured those options using the `git config` command, click *HACK*.
+Une fois que vous avez configuré ces options en utilisant la commande `git config`, cliquez sur *HACK*.

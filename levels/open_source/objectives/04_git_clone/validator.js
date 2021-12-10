@@ -5,7 +5,7 @@ module.exports = async helper => {
   const { repositoryFilePath } = helper.validationFields;
 
   if (!repositoryFilePath) {
-    helper.fail(`Don't forget to provide a repository file path!`);
+    helper.fail(`N'oubliez pas de fournir un chemin d'accès au fichier de répertoire !`);
     return;
   }
 
@@ -14,7 +14,7 @@ module.exports = async helper => {
 
     if (directoryExists !== 'dir') {
       helper.fail(
-        `We could not find a directory at the path you provided! -> ${repositoryFilePath}`
+        `Nous n'avons pas pu trouver de répertoire au chemin que vous avez fourni ! -> ${repositoryFilePath}`
       );
       return;
     }
@@ -24,7 +24,7 @@ module.exports = async helper => {
 
     if (packageFileExists !== 'file') {
       helper.fail(
-        `We could not find the package file in your provided repository! Was it cloned correctly? -> ${packagePath}`
+        `Nous n'avons pas pu trouver le fichier du paquet dans le répertoire que vous avez fourni ! A-t-il été cloné correctement ? -> ${packagePath}`
       );
       return;
     }
@@ -33,17 +33,17 @@ module.exports = async helper => {
 
     if (packageContents.name !== 'open-pixel-art') {
       helper.fail(
-        `The package file in that repository was not for the correct project! Was it cloned correctly? -> ${packagePath}`
+        `Le fichier du paquet dans ce répertoire n'était pas pour le bon projet ! A-t-il été cloné correctement ? -> ${packagePath}`
       );
       return;
     }
 
     helper.success(
-      `It looks like you've cloned the Open Pixel Art repository correctly!`,
+      `Il semble que vous ayez cloné le répertoire Open Pixel Art correctement !`,
       [{ name: 'OPEN_PIXEL_ART_DIR', value: repositoryFilePath }]
     );
   } catch (err) {
-    helper.fail(`Something went wrong while we were trying to validate your repository clone!
+    helper.fail(`Un problème est survenu lors de la validation du clone de votre répertoire !
     
     ${err}`);
   }

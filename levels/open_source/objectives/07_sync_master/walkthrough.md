@@ -1,107 +1,106 @@
-# Synchronize a Fork
+## Synchroniser un Fork
 
-## Git is a distributed system
+## Git est un système distribué
 
-One important aspect of git is it is distributed, and being distributed largely means there is no inherent “upstream” or “downstream” in the system.
+Un aspect important de git est qu'il est distribué, et être distribué signifie largement qu'il n'y a pas d'"amont" ou d'"aval" inhérent au système.
 
-Every repository contains a same git history and snapshots of your code. That being said, there are some naming conventions the open source community uses to help keep track of things. Just in keep in mind they're not inherently special!
+Chaque dépôt contient un même historique git et des instantanés de votre code. Ceci étant dit, il existe certaines conventions de nommage que la communauté open source utilise pour aider à garder la trace des choses. Gardez à l'esprit qu'elles ne sont pas intrinsèquement spéciales !
 
-## Local vs Remote
+## Local vs distant
 
-The first useful classification of repositories is `local` vs. `remote`. The version that you cloned onto your own computer is called a `local` repository. The original version on GitHub and your copy that you forked are called `remote` repositories.
+La première classification utile des dépôts est `local` par opposition à `distant`. La version que vous avez clonée sur votre propre ordinateur est appelée un répertoire `local`. La version originale sur GitHub et la copie que vous avez forgée sont appelées des dépôts `distants`.
 
-Your changes will live in your local repository only until you push them back up to your fork. One complication of working on an open source project is that other developers are pushing up their own changes too!
+Vos modifications seront conservées dans votre répertoire local jusqu'à ce que vous les repoussiez vers votre Fork. Une complication du travail sur un projet open source est que les autres développeurs poussent leurs propres changements aussi !
 
-## How do I get their changes?
+### Comment puis-je obtenir leurs modifications ?
 
-While you've been working here, there's a chance that new changes got uploaded to GitHub you don't have locally! When we originally cloned our Open Pixel Art fork to this computer, we linked it as a remote repository.
+Pendant que vous travaillez ici, il y a une chance que de nouveaux changements aient été téléchargés sur GitHub que vous n'avez pas localement ! Lorsque nous avons cloné notre fork Open Pixel Art sur cet ordinateur, nous l'avons lié comme un répertoire distant.
 
-You can see all of the linked repositories by using the `git remote` command. Adding the `-v` command gives more information about the remote, like the URL of the git repoistory its linked to.
+Vous pouvez voir tous les dépôts liés en utilisant la commande `git remote`. L'ajout de la commande `-v` donne plus d'informations sur le distant, comme l'URL du dépôt git auquel il est lié.
 
 ```bash
-git remote  -v
+git remote -v
 ```
 
-When you run `git remote`, you'll see a few lines that look like this:
+Lorsque vous lancez `git remote`, vous verrez quelques lignes qui ressemblent à ceci :
 
-```bash
-origin	https://github.com/<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art.git (fetch)
-origin	https://github.com/<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art.git (push)
+``bash
+origin https://github.com/<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art.git (push)
 ```
 
-However, other developers won't be making changes to your fork, they'll be changing the original. We need to add another remote repository. By convention, we'll be calling it `upstream`.
+Cependant, les autres développeurs n'apporteront pas de modifications à votre Fork, ils modifieront l'original. Nous devons ajouter un autre répertoire distant. Par convention, nous l'appellerons `upstream`.
 
-## How do I add the upstream remote?
+## Comment ajouter le dépôt distant upstream ?
 
-First, you'll need the URL of the [original Open Pixel Art project's](https://github.com/twilio-labs/open-pixel-art) git repository. This will be very similar to the browser URL and end in `.git`. You'll get this URL the same way you did when you originally [cloned this repository from the GitHub documentation](https://help.github.com/en/articles/cloning-a-repository).
+Tout d'abord, vous aurez besoin de l'URL du dépôt git du [projet original Open Pixel Art](https://github.com/twilio-labs/open-pixel-art). Elle sera très similaire à l'URL du navigateur et se terminera par `.git`. Vous obtiendrez cette URL de la même manière que lorsque vous avez [cloné ce dépôt à partir de la documentation GitHub](https://help.github.com/en/articles/cloning-a-repository).
 
-The URL should look like this, but will be different for any other repository you use in the future:
+L'URL devrait ressembler à ceci, mais sera différente pour tout autre dépôt que vous utiliserez à l'avenir :
 
-```bash
+``bash
 https://github.com/twilio-labs/open-pixel-art.git
 ```
 
-Now we're going to use the `add` functionality of `git remote`. The command we want to run looks like this:
+Maintenant, nous allons utiliser la fonctionnalité `add` de `git distant`. La commande que nous voulons lancer ressemble à ceci :
 
-```bash
+``bash
 git remote add upstream https://github.com/twilio-labs/open-pixel-art.git
 ```
 
-`git remote add` is the command we're running, `upstream` is the name of the remote we're creating, and `https://github.com/twilio-labs/open-pixel-art.git` comes from the Open Pixel Art project repository on GitHub.
+`git remote add` est la commande que nous exécutons, `upstream` est le nom du distant que nous créons, et `https://github.com/twilio-labs/open-pixel-art.git` provient du dépôt du projet Open Pixel Art sur GitHub.
 
-Let's run `git remote -v` one more time to verify we created `upstream` correctly. It should show both `origin` and `upstream` now.
+Exécutons `git remote -v` une fois de plus pour vérifier que nous avons créé `upstream` correctement. Il devrait montrer à la fois `origin` et `upstream` maintenant.
 
-```bash
-origin	https://github.com/<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art.git (fetch)
-origin	https://github.com/<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art.git (push)
-upstream	https://github.com/twilio-labs/open-pixel-art.git (fetch)
-upstream	https://github.com/twilio-labs/open-pixel-art.git (push)
+``bash
+origin https://github.com/<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art.git (fetch)
+origin https://github.com/<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art.git (push)
+upstream https://github.com/twilio-labs/open-pixel-art.git (fetch)
+upstream https://github.com/twilio-labs/open-pixel-art.git (push)
 ```
 
-## Lets sync our fork with the remote
+## Synchronisons notre Fork avec le distant.
 
-There's no functionality in GitHub to synchronize two remote repositories directly.
+Il n'y a pas de fonctionnalité dans GitHub pour synchroniser directement deux dépôts distants.
 
-1. Instead we're going to pull the code on the `master` branch from the original Open Pixel Art repository down locally.
-2. Then, merge it with the `master` branch on our local repository.
-3. Finally, we'll push the updated `master` branch back up to our fork.
+1. Au lieu de cela, nous allons tirer le code sur la branche `master` du dépôt original Open Pixel Art en local.
+2. Ensuite, nous le fusionnons avec la branche `master` de notre dépôt local.
+3. Enfin, nous allons pousser la branche `master` mise à jour vers notre Fork.
 
-This will end with all three of our repositories in sync.
+Ainsi, nos trois dépôts seront synchronisés.
 
-**1.** First we need to switch to our master branch:
+**1.** Tout d'abord, nous devons passer à notre branche principale :
 
-```bash
+``bash
 git checkout master
 ```
 
-Switching to our master branch will put our code back to the state it was when we originally cloned it. If you check the `_data/pixels.json` file you won't see your added pixel any more.
+Le passage à la branche master remettra notre code dans l'état où il était lorsque nous l'avons cloné. Si vous vérifiez le fichier `_data/pixels.json`, vous ne verrez plus votre pixel ajouté.
 
-Don't worry! If you switch back to your branch, `<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>` your changes are still there safe and sound.
+Ne vous inquiétez pas ! Si vous retournez dans votre branche, `<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>` vos modifications sont toujours là, saines et sauves.
 
-**2.** Now we use the `git pull` command to get the code from our recently configured `upstream` repository. We need to specify the `master` branch to pull from as well.
+**2.** Maintenant, nous utilisons la commande `git pull` pour obtenir le code de notre dépôt `upstream` récemment configuré. Nous devons spécifier la branche `master` pour la publication.
 
-```bash
+``bash
 git pull upstream master
 ```
 
-**3.** After you run the pull command, you should see a message detailing all the code differences between your local `master` and the `open-pixel-art` `master`. This might be a ton of files or you might get a message that you're already up to date!
+**3.** Après avoir lancé la commande pull, vous devriez voir un message détaillant toutes les différences de code entre votre `master` local et le `master` de `open-pixel-art`. Il peut s'agir d'une tonne de fichiers ou vous pouvez recevoir un message indiquant que vous êtes déjà à jour !
 
-If you did get changes, you need to push them back up to your fork. You can do that by running the git push command.
+Si vous avez reçu des changements, vous devez les repousser vers votre Fork. Vous pouvez le faire en lançant la commande git push.
 
-```bash
+``bash
 git push
 ```
 
-This will push your local changes on the `master` branch to your fork's `master` branch. Now our fork's git history for master, our local master, and the open-pixel-art master branch are all in sync!
+Ceci va pousser vos changements locaux sur la branche `master` vers la branche `master` de votre Fork. Maintenant l'historique git de notre fork pour master, notre master local, et la branche master de open-pixel-art sont tous synchronisés !
 
-## Verify
+## Vérifier
 
-You can see the list of the latest commits on each repository by visiting these URLS. Be sure to refresh to make sure the latest commit is the same on your fork and the original repository.
+Vous pouvez voir la liste des derniers commits sur chaque dépôt en visitant ces URLs. Assurez-vous de rafraîchir pour vous assurer que le dernier commit est le même sur votre Fork et sur le répertoire original.
 
-There's a chance that new commits have shown up since you did your last sync! This is especially common on this learning repository where Pull Requests are being automatically approved and merged!
+Il y a une chance que de nouveaux commits soient apparus depuis que vous avez fait votre dernière synchronisation ! Ceci est particulièrement fréquent sur ce dépôt d'apprentissage où les Pull Requests sont automatiquement approuvées et fusionnées !
 
 [https://github.com/twilio-labs/open-pixel-art/commits/master](https://github.com/twilio-labs/open-pixel-art/commits/master)
 
 [https://github.com/<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art/commits/master](https://github.com/<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art/commits/master)
 
-Once you've synced up all three repositories' master branches, go ahead and hit `HACK` on the right!
+Une fois que vous avez synchronisé les branches maîtresses des trois dépôts, allez-y et appuyez sur `HACK` à droite !

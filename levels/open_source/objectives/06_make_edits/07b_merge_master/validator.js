@@ -27,17 +27,17 @@ module.exports = async helper => {
 
     if (!branchList.includes(TQ_OPEN_PIXEL_ART_BRANCH)) {
       helper.fail(
-        `The latest commit on master "${latestMasterCommit}" wasn't found in your branch "${TQ_OPEN_PIXEL_ART_BRANCH}"!`
-      );
-      return;
+        `Le dernier commit sur master "${latestMasterCommit}" n'a pas été trouvé dans votre branche "${TQ_OPEN_PIXEL_ART_BRANCH}"!`
+      ) ;
+      retour ;
     }
 
     return helper.success(
-      `We found the latest commit on master in your branch "${TQ_OPEN_PIXEL_ART_BRANCH}"!`
-    );
+      `Nous avons trouvé le dernier commit sur master dans votre branche "${TQ_OPEN_PIXEL_ART_BRANCH}"!`
+    ) ;
   } catch (err) {
     helper.fail(
-      `Something went wrong when we tried to validate if your branch had master merged in!
+      `Quelque chose n'a pas fonctionné quand nous avons essayé de valider si votre branche a été fusionnée avec master !
       
       ${err}`
     );

@@ -1,5 +1,5 @@
-# Merge into Master
+# Fusionner dans Master
 
-Now that we have our local master branch synchronized with the repository, let's learn how to merge those changes into our pixel branch, `<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>`.
+Maintenant que nous avons notre branche master locale synchronisée avec le dépôt, apprenons comment fusionner ces changements dans notre branche pixel, `<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>`.
 
-Merge your local master branch into your branch `<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>`, then click `HACK`!
+Fusionnez votre branche master locale dans votre branche `<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>`, puis cliquez sur `HACK` !

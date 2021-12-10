@@ -1,6 +1,6 @@
 {
   "name": "twilioquest-open-source",
-  "description": "This is the Forest of Open Source extension for TwilioQuest.",
+  "description": "Il s'agit de l'extension de la forêt de l'Open Source pour TwilioQuest.",
   "version": "1.0.3",
   "engines": {
     "twilioquest": "3.1.44"

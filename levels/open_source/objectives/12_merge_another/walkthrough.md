@@ -1,37 +1,37 @@
-# One More Time
+## Une fois de plus
 
-## How do I find projects?
+## Comment trouver des projets ?
 
-Deciding that you want to contribute to more open source projects is a great first step. But how do you find projects to work on?
+Décider que vous voulez contribuer à plus de projets open source est un excellent premier pas. Mais comment trouver des projets sur lesquels travailler ?
 
-If there are any tools, libraries, or other software projects you admire check their GitHub pages to see if they have any open issues. Most projects will welcome a Pull Request, but you should try to make sure they're still being actively maintained!
+S'il y a des outils, des bibliothèques ou d'autres projets logiciels que vous admirez, vérifiez leurs pages GitHub pour voir s'ils ont des problèmes ouverts. La plupart des projets accepteront une demande de publication, mais vous devriez essayer de vous assurer qu'ils sont toujours activement maintenus !
 
-Another option if you have no ideas for a project to start on is to check out one of these curation sites. They use various different strategies to recommend different GitHub issues for you to tackle.
+Si vous n'avez pas d'idée de projet, vous pouvez également consulter l'un de ces sites de curation. Ils utilisent différentes stratégies pour vous recommander différents problèmes GitHub auxquels vous pouvez vous attaquer.
 
-- [Up For Grabs](https://up-for-grabs.net/)
-- [Issuehub](http://issuehub.io/)
+- Up For Grabs] (https://up-for-grabs.net/)
+- Issuehub] (http://issuehub.io/)
 - [First Timers Only](https://www.firsttimersonly.com/)
-- [Your First PR](http://yourfirstpr.github.io/)
-- [Awesome For Beginners](https://github.com/mungell/awesome-for-beginners)
+- Votre premier PR](http://yourfirstpr.github.io/)
+- [Génial pour les débutants](https://github.com/mungell/awesome-for-beginners)
 
-Additionally, this is a [great longer guide](https://opensource.guide/how-to-contribute/) that gives in depth instruction on how to look for issues and communicate with open source maintainters effectively. It also talks about how writing code isn't the only way to help!
+En outre, voici un [excellent guide plus long](https://opensource.guide/how-to-contribute/) qui donne des instructions approfondies sur la façon de rechercher des problèmes et de communiquer efficacement avec les mainteneurs de logiciels libres. Il explique également qu'écrire du code n'est pas la seule façon d'aider !
 
-## I contributed, check my work!
+### J'ai contribué, vérifiez mon travail !
 
-If you've opened your next Pull Request and gotten it merged, its time to submit it to get your XP!
+Si vous avez ouvert votre prochaine Pull Request et l'avez fait fusionner, il est temps de la soumettre pour obtenir votre XP !
 
-We will need three things from you that you should be able to find from the URL of your Pull Request.
+Nous aurons besoin de trois choses de votre part que vous devriez être en mesure de trouver à partir de l'URL de votre Pull Request.
 
-- the user that owns the repository you contributed to
-- the name of the repository you contributed to
-- the number of the pull request you contributed with
+- l'utilisateur qui possède le répertoire auquel vous avez contribué
+- le nom du répertoire auquel vous avez contribué
+- le numéro de la demande de publication à laquelle vous avez contribué.
 
-For example, with the Open Pixel Art project that would've been:
+Par exemple, avec le projet Open Pixel Art, cela aurait été :
 
 - twilio-labs
 - open-pixel-art
 - <%= env.TQ_OPEN_PIXEL_ART_PR_NUMBER.value %>
 
-## Hack!
+## Hack !
 
-Enter those values in the fields to the right, and then press `HACK` to get your credit!
+Entrez ces valeurs dans les champs à droite, puis appuyez sur `HACK` pour obtenir votre crédit !

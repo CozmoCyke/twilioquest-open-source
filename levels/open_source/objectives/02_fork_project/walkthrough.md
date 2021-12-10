@@ -1,21 +1,21 @@
-# Its Tine to Do This
+# C'est le moment de le faire
 
-## What is a fork?
+## Qu'est-ce qu'un fork ?
 
-A fork is your own personal copy of someone else's repository. You're free to make whatever changes you want without affecting the other person's work. This can be useful if you need to tweak a project for your own usage. More commonly, it's used so you can propose changes to someone else's project.
+Un fork est votre copie personnelle du répertoire de quelqu'un d'autre. Vous êtes libre d'apporter les modifications que vous souhaitez sans affecter le travail de l'autre personne. Cela peut être utile si vous avez besoin de modifier un projet pour votre propre usage. Plus couramment, il est utilisé pour que vous puissiez proposer des modifications au projet de quelqu'un d'autre.
 
-A word of warning, some projects are licensed in a way that prevents you from doing certain things! GitHub maintains some [resources to help you understand licensing](https://help.github.com/en/articles/licensing-a-repository).
+Un mot d'avertissement, certains projets sont sous licence d'une manière qui vous empêche de faire certaines choses ! GitHub propose des [ressources pour vous aider à comprendre les licences] (https://help.github.com/en/articles/licensing-a-repository).
 
 ## Open Pixel Art
 
-The repository we're going to fork is one we created especially for this mission. It is called Open Pixel Art and you can [view the project online](https://open-pixel-art.com). Every pixel on this web page was placed by someone completing this course. Soon, you'll be learning how to add your very own pixel!
+Le répertoire que nous allons forker est celui que nous avons créé spécialement pour cette mission. Il s'appelle Open Pixel Art et vous pouvez [voir le projet en ligne] (https://open-pixel-art.com). Chaque pixel de cette page Web a été placé par quelqu'un qui a suivi ce cours. Bientôt, vous apprendrez à ajouter votre propre pixel !
 
-## It all starts with a fork
+## Tout commence par un fork
 
-First we need to learn how to create a fork! GitHub tries to keep this process straightforward, and they maintain [documentation that is kept up to date here](https://help.github.com/en/articles/fork-a-repo#fork-an-example-repository).
+Tout d'abord, nous devons apprendre à créer un fork ! GitHub s'efforce de simplifier ce processus et maintient une [documentation mise à jour ici] (https://help.github.com/en/articles/fork-a-repo#fork-an-example-repository).
 
-GitHub lists their own example repository for you to fork, but you should fork our [Open Pixel Art repository](https://github.com/twilio-labs/open-pixel-art) instead to complete this mission.
+GitHub propose son propre exemple de dépôt que vous pouvez forker, mais vous devriez plutôt forker notre [dépôt Open Pixel Art](https://github.com/twilio-labs/open-pixel-art) pour mener à bien cette mission.
 
-## Check my results!
+## Vérifiez mes résultats !
 
-Now you know what a fork is, what we're forking, and how to fork it. So fork it! Once you've created your own fork of the Open Pixel Art repository click the `HACK` button. Be sure your fork is named `open-pixel-art`.
+Maintenant vous savez ce qu'est un fork, ce que nous forkons et comment le forker. Alors faites-le ! Une fois que vous avez créé votre propre fork du répertoire Open Pixel Art, cliquez sur le bouton `HACK`. Assurez-vous que votre fork est nommé `open-pixel-art`.

@@ -1,13 +1,13 @@
 {
-  "title": "Contributing to Open Source: Install Git",
-  "description": "Install the <strong>git command line tools</strong> so you can work with git repositories on your computer.",
-  "show_ide": false,
+  "title": "Contribuer à l'Open Source : Installer Git",
+  "description": "Installez les <strong>outils de ligne de commande git</strong> afin de pouvoir travailler avec les répertoires git sur votre ordinateur.",
+  "show_ide" : false,
   "validation_fields": [
     {
       "name": "prompt",
       "type": "prompt",
       "placeholder": "",
-      "label": "Click HACK once you've ensured \"git\" is installed locally on your computer!"
+      "label" : "Cliquez sur HACK une fois que vous vous êtes assuré que \"git\" est installé localement sur votre ordinateur !"
     }
   ],
   "rewards": {

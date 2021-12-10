@@ -1,86 +1,86 @@
-# Becoming the Merge Master
+## Devenir le maître de la fusion
 
-## What is a merge?
+## Qu'est-ce qu'une fusion ?
 
-When you pulled the commits from the original Open Pixel Art repository into your local repository everything went smoothly. This is because you didn't change any files on that branch.
+Lorsque vous avez transféré les commits du répertoire original d'Open Pixel Art dans votre répertoire local, tout s'est bien passé. C'est parce que vous n'avez modifié aucun fichier sur cette branche.
 
-However, you've made changes on your pixel branch `<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>` when you committed a new pixel. Chances are, when you pulled the commits from the Open Pixel Art project someone else also added a new pixel. In order to reconcile these changes that effect the same code we need to go through a merge process.
+Cependant, vous avez fait des changements sur votre branche de pixels `<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>` lorsque vous avez livré un nouveau pixel. Il est probable que lorsque vous avez publié les commits du projet Open Pixel Art, quelqu'un d'autre a également ajouté un nouveau pixel. Afin de réconcilier ces changements qui affectent le même code, nous devons passer par un processus de fusion.
 
-Sometimes, git can automatically figure out what the merged code should look like. If I edit the first line of a file and you edit the 200th line, git is able to tell that both of those lines should make it into the final file. However, if I edit the 3rd line and you edit the 5th line things get more complicated.
+Parfois, git peut automatiquement déterminer à quoi devrait ressembler le code fusionné. Si j'édite la première ligne d'un fichier et que vous éditez la 200ème ligne, git est capable de dire que ces deux lignes doivent être intégrées au fichier final. Cependant, si j'édite la 3e ligne et que vous éditez la 5e ligne, les choses se compliquent.
 
-When changes like that happen that where git cannot determine the result automatically, we need to help it out by manually deciding what code makes it into the final file. We call this situation a merge conflict.
+Lorsque des modifications de ce type se produisent et que git ne peut pas déterminer le résultat automatiquement, nous devons l'aider en décidant manuellement quel code doit être intégré au fichier final. Nous appelons cette situation un conflit de fusion.
 
-## Conflict!
+## Conflit !
 
-Merge conflicts can be challenging to work through. If you ask developers what they're least favorite part of working with git and version control is you will frequently hear "resolving merge conflicts" as the answer. We don't say this to scare you, but to let you know that event the most veteran developers still have problems with this process! It can be genuinely hard!
+Les conflits de fusion peuvent être difficiles à gérer. Si vous demandez aux développeurs ce qu'ils préfèrent le moins dans le travail avec git et le contrôle de version, vous entendrez souvent la réponse "résoudre les conflits de fusion". Nous ne disons pas cela pour vous effrayer, mais pour vous faire savoir que même les développeurs les plus expérimentés ont toujours des problèmes avec ce processus ! Cela peut être véritablement difficile !
 
-Fortunately, since you're only changing a single line of the file `_data/pixels.json` your merge conflict resolution should be more straightforward.
+Heureusement, puisque vous ne modifiez qu'une seule ligne du fichier `_data/pixels.json`, la résolution des conflits de fusion devrait être plus simple.
 
-Thoroughly covering this topic could take an entire extra mission! GitHub has some deeper [information about what merge conflicts are and their causes](https://help.github.com/en/articles/about-merge-conflicts). They also have [a detailed guide on how to resolve conflicts via the command line](https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line).
+La couverture complète de ce sujet pourrait prendre une mission supplémentaire entière ! GitHub propose des [informations plus détaillées sur les conflits de fusion et leurs causes] (https://help.github.com/en/articles/about-merge-conflicts). Il existe également [un guide détaillé sur la manière de résoudre les conflits en ligne de commande] (https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line).
 
-## How do I merge it?
+## Comment fusionner ?
 
-First we need to return to our branch with the pixel on it. This will get us our pixel addition back in the `_data/pixels.json` file!
+Tout d'abord, nous devons retourner à notre branche avec le pixel dessus. Cela nous permettra de retrouver l'ajout de notre pixel dans le fichier `_data/pixels.json` !
 
-```bash
+``bash
 git checkout <%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>
 ```
 
-Now, since we no longer have the latest code from the master, we'll kick off the merge process to merge branch `master` into our current branch, `<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>`.
+Maintenant, puisque nous n'avons plus le dernier code du master, nous allons lancer le processus de fusion pour fusionner la branche `master` dans notre branche actuelle, `<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>`.
 
-```bash
+``bash
 git merge master
 ```
 
-When you ran the merge command you'll likely have seen a lot of output telling you about how the merge went. Git will tell you if it tried to auto-merge any files and whether there were conflicts while trying to merge.
+Lorsque vous avez exécuté la commande merge, vous avez probablement vu de nombreux messages vous indiquant comment la fusion s'est déroulée. Git vous dira s'il a essayé de fusionner automatiquement des fichiers et s'il y a eu des conflits lors de la tentative de fusion.
 
-If you did not see any `CONFLICT` messages then you're in luck! Git doesn't need any help resolving your merge!
+Si vous n'avez pas vu de messages `CONFLICT`, alors vous avez de la chance ! Git n'a pas besoin d'aide pour résoudre votre fusion !
 
-We can get some more information about the current state of our merge by running the `git status` command. This will tell us a lot of information.
+Nous pouvons obtenir plus d'informations sur l'état actuel de notre fusion en lançant la commande `git status`. Cela nous donnera beaucoup d'informations.
 
-It will let us know we need to manually resolve a merge `You have unmerged paths.` and will give us a command to abort our merge `git merge --abort` in case we've made a mistake.
+Elle nous fera savoir que nous devons résoudre manuellement une fusion `You have unmerged paths.` et nous donnera une commande pour abandonner notre fusion `git merge --abort` au cas où nous aurions fait une erreur.
 
-Also, at the bottom of this command result with be a list of the unmerged paths we need to resolve conflicts in. If you've just added a pixel, you'll see something like:
+De plus, en bas de cette commande, il y aura une liste des chemins non fusionnés dans lesquels nous devons résoudre les conflits. Si vous venez d'ajouter un pixel, vous verrez quelque chose comme :
 
-```bash
-Unmerged paths:
-  (use "git add <file>..." to mark resolution)
+``bash
+Chemins non fusionnés :
+  (utilisez "git add <file>..." pour marquer la résolution)
 
-	both modified:   _data/pixels.json
+	tous deux modifiés :   _data/pixels.json
 ```
 
-[Its time to resolve the conflicts!](https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line)
+(Il est temps de résoudre les conflits !) (https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line)
 
-Once you've resolved your merge conflicts, you need to commit that resolution so git knows your final decision! We're leaving the `-m` off this time so we can use git's auto generated merge message.
+Une fois que vous avez résolu vos conflits de fusion, vous devez commiter cette résolution pour que git connaisse votre décision finale ! Nous ne mettons pas le `-m` cette fois-ci pour pouvoir utiliser le message de fusion généré automatiquement par git.
 
-## Commit it
+## Livrez-le
 
 ```
 git commit
 ```
 
-If you run this command and see a message like this `error: Committing is not possible because you have unmerged files.` then your merge isn't resolved yet!
+Si vous lancez cette commande et voyez un message comme celui-ci `error : Committing is not possible because you have unmerged files`` alors votre fusion n'est pas encore résolue !
 
-If you didn't see the above message, that means your in the text editor git is having you write your comit message in!
+Si vous n'avez pas vu le message ci-dessus, cela signifie que vous êtes dans l'éditeur de texte dans lequel git vous fait écrire votre message comit !
 
-The default tool that git will open to edit commit message in is vim. This is a command line only text editor that can be confusing if you've never used it before. To save this message inside of vim we need to do a couple steps.
+L'outil par défaut que git va ouvrir pour éditer le message de commit est vim. C'est un éditeur de texte en ligne de commande qui peut être déroutant si vous ne l'avez jamais utilisé auparavant. Pour sauvegarder ce message dans vim, nous devons suivre quelques étapes.
 
-1. first hit the `ESC` key to enter command mode
-2. type `:` to start a command
-3. type `w` to instruct vim to write your changes to the file
-4. type `q` to instruct vim to quit
-5. hit `ENTER` to run your vim command
+1. tapez d'abord la touche `ESC` pour entrer en mode commande
+2. tapez `:` pour lancer une commande
+3. tapez `w` pour demander à vim d'écrire vos modifications dans le fichier
+4. Tapez `q` pour demander à vim de quitter.
+5. tapez `ENTER` pour lancer votre commande vim
 
-If everything worked correctly you should be back on the terminal and outside of vim again!
+Si tout a fonctionné correctement, vous devriez être de retour sur le terminal et en dehors de vim !
 
-## Verify
+## Vérifier
 
-Let's double check everything is fine by running `git status` one last time. We should now see a message like `nothing to commit, working tree clean` indicating we're all up to date.
+Vérifions que tout va bien en lançant `git status` une dernière fois. Nous devrions maintenant voir un message comme `nothing to commit, working tree clean` indiquant que nous sommes tous à jour.
 
-Additionally, lets run `git log` to find our merge commit. Your most recent commit should have the message you entered in vim for your commit. If you left the auto generated message it will look something like this:
+De plus, lançons `git log` pour trouver notre commit de fusion. Votre plus récent commit devrait avoir le message que vous avez entré dans vim pour votre commit. Si vous avez laissé le message généré automatiquement, il ressemblera à quelque chose comme ceci :
 
-```bash
-Merge branch 'master' into <%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>
+``bash
+Fusionner la branche 'master' dans <%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>
 ```
 
-Once you've merged master into your branch, `<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>`, go ahead and hit `HACK` on the right!
+Une fois que vous avez fusionné master dans votre branche, `<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>`, allez-y et appuyez sur `HACK` à droite !

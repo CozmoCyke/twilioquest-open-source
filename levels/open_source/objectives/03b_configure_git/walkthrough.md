@@ -1,35 +1,35 @@
-# Configuring Git
+## Configurer Git
 
-## How do I configure?
+## Comment configurer ?
 
-Git's global configuration file can be edited using the command `git config` in your terminal. There are a lot of different options that let you customize git to your particular workflow.
+Le fichier de configuration globale de Git peut être édité en utilisant la commande `git config` dans votre terminal. Il y a beaucoup d'options différentes qui vous permettent de personnaliser git pour votre flux de travail particulier.
 
-We're only going to need to set two options to use `git` with GitHub in this mission. Those two settings are our global user name and email. The following commands will set these for us. We're using the `--global` flag so that we use this same name and email for every `git` project.
+Nous n'aurons besoin de définir que deux options pour utiliser `git` avec GitHub dans cette mission. Ces deux paramètres sont notre nom d'utilisateur global et notre email. Les commandes suivantes vont les définir pour nous. Nous utilisons le drapeau `--global` afin d'utiliser le même nom et la même adresse e-mail pour chaque projet `git`.
 
-## Show me the commands
+## Montrez-moi les commandes
 
-Before running this command, replace `John Doe` with your name. Make sure to leave the quotes!
+Avant d'exécuter cette commande, remplacez `John Doe` par votre nom. Assurez-vous de laisser les guillemets !
 
 ```
 git config --global user.name "John Doe"
 ```
 
-Before running this command, replace `johndoe@example.com` with your registered GitHub email address.
+Avant d'exécuter cette commande, remplacez `johndoe@example.com` par votre adresse électronique enregistrée sur GitHub.
 
 ```
 git config --global user.email johndoe@example.com
 ```
 
-## Verify!
+## Vérifiez !
 
-To ensure you've configured everything correctly, run the following command:
+Pour vous assurer que vous avez tout configuré correctement, exécutez la commande suivante :
 
 ```
 git config --list
 ```
 
-You should see your `user.name` and `user.email` set with the correct values!
+Vous devriez voir vos `user.name` et `user.email` définis avec les bonnes valeurs !
 
-## Hack it!
+## Piratez le !
 
-Once You've verified git is configured correctly, press `HACK`!
+Une fois que vous avez vérifié que git est configuré correctement, appuyez sur `HACK` !

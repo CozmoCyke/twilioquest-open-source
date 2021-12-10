@@ -1,10 +1,10 @@
-// Replace the string below with the encoded message from the tutorial!
-// If you forgot to copy it, it's "S2V2aW4gaXMgYXdlc29tZQ=="
-const ENCODED_MESSAGE = 'replace me!';
+// Remplacez la chaîne ci-dessous par le message codé du tutoriel !
+// Si vous avez oublié de le copier, c'est "S2V2aW4gaXMgYXdlc29tZQ==".
+const ENCODED_MESSAGE = 'replace me!' ;
 
-// Next, use secret monkey science to decode the encoded message
-const decodedMessage = Buffer.from(ENCODED_MESSAGE, 'base64').toString('ascii');
+// Ensuite, utilisez la science secrète des singes pour décoder le message codé.
+const decodedMessage = Buffer.from(ENCODED_MESSAGE, 'base64').toString('ascii') ;
 
-// Print the decoded message to the console!
-console.log('Here is the decoded message - paste it in the text field:');
-console.log(decodedMessage);
+// Affichez le message décodé sur la console !
+console.log('Voici le message décodé - collez-le dans le champ de texte:') ;
+console.log(decodedMessage) ;

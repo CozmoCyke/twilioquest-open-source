@@ -1,131 +1,131 @@
 # Pixel Time
 
-Now that we have our project copied locally, and a development branch created, we are ready to make our contribution. But before that can happen, we need to set up the project and get it running! This way we can check out our changes on our own computer before pushing them back up to GitHub for everyone else to see.
+Maintenant que nous avons copié notre projet localement et créé une branche de développement, nous sommes prêts à apporter notre contribution. Mais avant cela, nous devons définir le projet et le faire fonctionner ! De cette façon, nous pouvons vérifier nos changements sur notre propre ordinateur avant de les pousser vers GitHub pour que tout le monde puisse les voir.
 
-## Node.js and NPM
+## Node.js et NPM
 
-The Open Pixel Art project is build on top of Node.js and will use `npm` as well. This objective assumes you understand how `npm` works and have it installed.
+Le projet Open Pixel Art est construit au dessus de Node.js et utilisera également `npm`. Cet objectif suppose que vous comprenez le fonctionnement de `npm` et que vous l'avez installé.
 
-If you're unfamiliar with these tools, follow this [installation guide to get Node.js installed](https://www.taniarascia.com/how-to-install-and-use-node-js-and-npm-mac-and-windows/). After you have Node.js installed, you should be able to blindly copy and paste the `npm` commands in this objective.
+Si vous n'êtes pas familier avec ces outils, suivez ce [guide d'installation de Node.js] (https://www.taniarascia.com/how-to-install-and-use-node-js-and-npm-mac-and-windows/). Après avoir installé Node.js, vous devriez être capable de copier et coller les commandes `npm` dans cet objectif.
 
-## Install the project dependencies
+## Installer les dépendances du projet
 
-Now that you have Node.js and `npm` installed, in the main folder of your Open Pixel Art project run the following command:
+Maintenant que vous avez installé Node.js et `npm`, dans le dossier principal de votre projet Open Pixel Art, exécutez la commande suivante :
 
 ```
 npm install
 ```
 
-This will download all of the code dependencies this project needs to run onto your computer. You should now see status messages as the dependenices install.
+Ceci téléchargera sur votre ordinateur toutes les dépendances du code dont ce projet a besoin pour fonctionner. Vous devriez maintenant voir des messages d'état pendant l'installation des dépendances.
 
-This process can take some time!
+Ce processus peut prendre un certain temps !
 
-## Boot it up
+## Démarrez-le
 
-Now that our project is installed and configured, lets start it up locally. Run the following command in the root directory of your repository:
+Maintenant que notre projet est installé et configuré, nous allons le démarrer localement. Exécutez la commande suivante dans le répertoire racine de votre dépôt :
 
 ```
 npm start
 ```
 
-This will start a local web server on your computer that is running your own personal version of the Open Pixel Project. In the terminal, after the server has started you should see a URL printed that will usually be:
+Cela va démarrer un serveur web local sur votre ordinateur qui exécute votre version personnelle du projet Open Pixel. Dans le terminal, après que le serveur ait démarré, vous devriez afficher une URL qui sera généralement :
 
-```url
+``url
 http://localhost:8080
 ```
 
-Open this page in your web browser to see your own local Open Pixel Art project page live!
+Ouvrez cette page dans votre navigateur web pour voir votre propre page locale du projet Open Pixel Art en direct !
 
 ## Pixels.json
 
-Now that we can see our pixels locally, let's learn how to change them! Open the Open Pixel Art project in a text editor of your choice! Now, open up the file located at `_data/pixels.json`.
+Maintenant que nous pouvons voir nos pixels localement, apprenons à les modifier ! Ouvrez le projet Open Pixel Art dans un éditeur de texte de votre choix ! Maintenant, ouvrez le fichier situé à `_data/pixels.json`.
 
-Inside of this file you'll find a JSON array of pixel obects that look like this:
+A l'intérieur de ce fichier, vous trouverez un tableau JSON d'objets de pixels qui ressemblent à ceci :
 
 ```diff
 {
-  "data": [
-    { "y": 1, "x": 1, "color": "#F22F46", "username": "<UNCLAIMED>" },
-    { "y": 1, "x": 2, "color": "#F22F46", "username": "<UNCLAIMED>" },
-    { "y": 1, "x": 3, "color": "#F22F46", "username": "<UNCLAIMED>" },
+  "données" : [
+    { "y" : 1, "x" : 1, "color" : "#F22F46", " username " : "<UNCLAIMED>" },
+    { "y" : 1, "x" : 2, "color" : "#F22F46", "username" : " <UNCLAIMED>" },
+    { "y" : 1, "x" : 3, "color" : "#F22F46", "username" : "<UNCLAIMED>" },
     ...
   ]
 }
 ```
 
-## Pixel object properties
+## Propriétés de l'objet pixel
 
-- `x`: The x-coordinate of your pixel. 0 is the left-most column of pixels
-- `y`: The y-coordinate of your pixel. 0 is the bottom-most row of pixels
-- `color`: The color your pixel should have as a hex code (e.g. #ff0000 for red)
-- `username`: The GitHub username you'll use to create the pull request
+- `x` : La coordonnée x de votre pixel. 0 est la colonne de pixels la plus à gauche
+- `y` : La coordonnée y de votre pixel. 0 est la rangée de pixels la plus basse
+- `color` : La couleur que doit avoir votre pixel sous forme de code hexadécimal (par exemple #ff0000 pour le rouge)
+- `username` : Le nom d'utilisateur GitHub que vous utiliserez pour créer la demande de publication.
 
-Create a new row in the `_data/pixels.json` file that looks something like this:
+Créez une nouvelle ligne dans le fichier `_data/pixels.json` qui ressemble à quelque chose comme ceci :
 
 ```diff
 {
-  "data": [
-+    { "y": 1, "x": 2, "color": "#FFFF00", "username": "cedric" },
-    { "y": 1, "x": 3, "color": "#F22F46", "username": "<UNCLAIMED>" },
+  "données" : [
++ { "y" : 1, "x" : 2, "color" : "#FFFF00", "nom d'utilisateur" : "cedric" },
+    { "y" : 1, "x" : 3, "couleur" : "#F22F46", "nom d'utilisateur" : "<UNCLAIMED>" },
     ...
   ]
 }
 ```
 
-You should now see your new pixel on your locally hosted URL!
+Vous devriez maintenant voir votre nouveau pixel sur votre URL hébergée localement !
 
-## Keep it sorted!
+## Gardez-le trié !
 
-Make sure you pixel addition to the `_data/pixels.json` is added in sorted order. It should start with `y` and then `x`. We've also added an npm task that you can run to do this sorting for you!
+Assurez-vous que le pixel ajouté dans le fichier `_data/pixels.json` est trié. Il devrait commencer par `y` et ensuite `x`. Nous avons également ajouté une tâche npm que vous pouvez exécuter pour faire ce tri pour vous !
 
-```bash
+``bash
 npm run sort:open-pixels
 ```
 
-After you've added your new pixel, run this in your terminal to re-sort the pixels file!
+Après avoir ajouté votre nouveau pixel, exécutez ceci dans votre terminal pour re-trier le fichier pixels !
 
-## Make sure everything still works!
+## Vérifiez que tout fonctionne toujours !
 
-We're going to run one final `npm` command before we finish making our change. This command is called `npm test`. Most open source projects have a suite of automatic tests. This helps you ensure that you've not done anything to break the project with your changes!
+Nous allons lancer une dernière commande `npm` avant de terminer nos modifications. Cette commande s'appelle `npm test`. La plupart des projets open source ont une suite de tests automatiques. Cela vous permet de vous assurer que vous n'avez rien fait pour casser le projet avec vos changements !
 
-Open a new Terminal tab or window and run the following command:
+Ouvrez un nouvel onglet ou une nouvelle fenêtre de Terminal et exécutez la commande suivante :
 
 ```
 npm test
 ```
 
-You should not see any tests have failed, they should all say `passed`. This means everything is still working!
+Vous ne devriez pas voir que les tests ont échoué, ils devraient tous dire `passed`. Cela signifie que tout fonctionne toujours !
 
-## How do I confirm my change?
+## Comment puis-je confirmer ma modification ?
 
-You've finally added a pixel to the canvas and confirmed you didn't break anything!
+Vous avez finalement ajouté un pixel au canvas et confirmé que vous n'avez rien cassé !
 
-Now we need to let `git` know that we're happy with our changes. We do this my creating something called a `commit`. A commit is one snapshot of your code base captured in time.
+Maintenant, nous devons faire savoir à `git` que nous sommes satisfaits de nos changements. Nous faisons cela en créant quelque chose appelé un `commit`. Un commit est un instantané de votre base de code capturé dans le temps.
 
-## How do I commit?
+## Comment faire un commit ?
 
-The first step is to add the files you want to be commited. You only need to add the files you want to change, so for this commit we'll only add our updated `_data/pixels.json` file.
+La première étape est d'ajouter les fichiers que vous voulez commiter. Vous n'avez besoin d'ajouter que les fichiers que vous voulez modifier, donc pour ce commit nous n'ajouterons que notre fichier `_data/pixels.json` mis à jour.
 
 ```
 git add _data/pixels.json
 ```
 
-To verify you've added the correct files, you can run the following command:
+Pour vérifier que vous avez ajouté les bons fichiers, vous pouvez exécuter la commande suivante :
 
 ```
 git status
 ```
 
-This command will show you which files are about to be commited in green. The `_data/pixels.json` file should be the only one listed!
+Cette commande vous montrera en vert les fichiers qui sont sur le point d'être commités. Le fichier `_data/pixels.json` devrait être le seul à être listé !
 
-Now we need to use the `git commit` command to finalize our changes. We also add a `-m` flag to this command so that we can add a message that goes along with out commit.
+Maintenant, nous devons utiliser la commande `git commit` pour finaliser nos changements. Nous ajoutons également un drapeau `-m` à cette commande afin de pouvoir ajouter un message qui accompagne notre commit.
 
-The `feat(pixels):` part before our message is added so that we the Open Pixel Art project can progamatically analyze commit messages. You can learn more about that by checking out the [Conventional Commits Standard](https://www.conventionalcommits.org/en/v1.0.0-beta.4/).
+La partie `feat(pixels):` qui précède notre message est ajoutée pour que le projet Open Pixel Art puisse analyser de manière programmatique les messages de commit. Vous pouvez en apprendre plus à ce sujet en consultant le [Conventional Commits Standard] (https://www.conventionalcommits.org/en/v1.0.0-beta.4/).
 
 ```
-git commit -m "feat(pixels): add my new pixel"
+git commit -m "feat(pixels) : add my new pixel" (feat(pixels) : ajouter mon nouveau pixel)
 ```
 
-## Hack away!
+## Piratez !
 
-This objective had a lot of steps! But now you have a commited new pixel and are ready to share it with the world. Press `HACK` to confirm your pixel has been changed and commited correctly.
+Cet objectif avait beaucoup d'étapes ! Mais maintenant vous avez un nouveau pixel committé et vous êtes prêt à le partager avec le monde. Appuyez sur `HACK` pour confirmer que votre pixel a été modifié et validé correctement.

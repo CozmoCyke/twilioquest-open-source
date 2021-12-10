@@ -4,7 +4,7 @@ module.exports = async (helper) => {
   const username = helper.getNormalizedInput("username", { lowerCase: false });
 
   if (!username) {
-    return helper.fail(`Please enter the username of your GitHub account!`);
+    return helper.fail(`Veuillez entrer le nom d'utilisateur de votre compte GitHub !`);
   }
 
   try {
@@ -14,17 +14,17 @@ module.exports = async (helper) => {
 
     if (response.statusCode === 200) {
       return helper.success(
-        `We found your GitHub user, ${username}. Good job!`,
+        `Nous avons trouvé votre utilisateur GitHub, ${username}. Bon travail !`,
         [{ name: "GITHUB_USERNAME", value: username }]
       );
     } else {
       helper.fail(
-        `We couldn't find the GitHub user, ${username}. Is there a typo in the username?`
+        `Nous n'avons pas trouvé l'utilisateur GitHub, ${username}. Y a-t-il une faute de frappe dans le nom d'utilisateur ?`
       );
     }
   } catch (err) {
     helper.fail(
-      `Something went wrong when we tried to validate your GitHub username!
+      `Un problème est survenu lorsque nous avons essayé de valider votre nom d'utilisateur GitHub !
       
       ${err}`
     );

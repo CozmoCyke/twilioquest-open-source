@@ -1,5 +1,5 @@
-# One More Time
+# Une fois de plus
 
-Once you've contributed to the Open Pixel Art project, you should know all you need to open a Pull Request on another open source project. Find another project to contribute to, and once that Pull Request is merged come back here.
+Une fois que vous avez contribué au projet Open Pixel Art, vous devriez savoir tout ce dont vous avez besoin pour ouvrir une Pull Request sur un autre projet open source. Trouvez un autre projet auquel contribuer, et une fois que cette Pull Request est publiée, revenez ici.
 
-Give us the name of the repository you contributed to and the Pull Request you got merged and then click `HACK`.
+Donnez-nous le nom du répertoire auquel vous avez contribué et la Pull Request que vous avez fusionnée, puis cliquez sur `HACK`.

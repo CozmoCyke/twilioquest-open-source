@@ -7,7 +7,7 @@ module.exports = async helper => {
   const { branchName } = helper.validationFields;
 
   if (!branchName) {
-    helper.fail(`Don't forget to provide the name of the branch you created!`);
+    helper.fail(`N'oubliez pas de fournir le nom de la branche que vous avez créée!`);
     return;
   }
 
@@ -28,25 +28,25 @@ module.exports = async helper => {
       !branches.includes(branchCheckedOutName)
     ) {
       helper.fail(
-        `We couldn't find the branch named "${branchName}" in your respository!`
+        `Nous n'avons pas pu trouver la branche nommée "${branchName}" in your respository!`
       );
       return;
     }
 
     if (!branches.includes(branchCheckedOutName)) {
       helper.fail(
-        `We found your branch "${branchName}" but it looks like you haven't checked it out yet!`
+        `Nous avons trouvé votre branche. "${branchName}" mais il semble que vous n'ayez pas encore vérifié !`
       );
       return;
     }
 
     helper.success(
-      `It looks like you created and checked out the branch "${branchName}" correctly!`,
+      `Il semble que vous ayez créé et vérifié la branche. "${branchName}" correctement !`,
       [{ name: 'OPEN_PIXEL_ART_BRANCH', value: branchName }]
     );
   } catch (err) {
     helper.fail(
-      `We ran into a problem trying to validate your branch was created!
+      `Nous avons rencontré un problème en essayant de valider la création de votre branche !
       
       ${err}`
     );

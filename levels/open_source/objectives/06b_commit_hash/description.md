@@ -1,5 +1,5 @@
 # A Commit Hash
 
-We've added a change to our repository, but how do we find it again in the future?
+Nous avons ajouté un changement à notre dépôt, mais comment le retrouver dans le futur ?
 
-Use `git log` to find the commit you made to create your new pixel. Once you've found that commit, enter the commit hash in the field on the right and click `HACK`!
+Utilisez `git log` pour trouver le commit que vous avez fait pour créer votre nouveau pixel. Une fois que vous avez trouvé ce commit, entrez le hash du commit dans le champ à droite et cliquez sur `HACK` !

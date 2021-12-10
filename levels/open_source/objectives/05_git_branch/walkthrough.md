@@ -1,49 +1,49 @@
-# Branching
+# Branchements
 
-Branches are like an alternate version of history. When you make a new branch, its code will be identical to your old code. However, once you make a change **only** the new branch will remember that change.
+Les branches sont comme une version alternative de l'historique. Lorsque vous créez une nouvelle branche, son code sera identique à votre ancien code. Cependant, une fois que vous avez effectué un changement, seule la nouvelle branche se souviendra de ce changement.
 
-This means you have a safe place to test out code changes without worrying they'll break your code forever. You can have as many different branches as you want, but we're only going to create one new branch for this objective.
+Cela signifie que vous disposez d'un endroit sûr pour tester les changements de code sans craindre qu'ils ne cassent votre code pour toujours. Vous pouvez avoir autant de branches différentes que vous le souhaitez, mais nous n'allons créer qu'une seule nouvelle branche pour cet objectif.
 
-## How do I make a new branch?
+## Comment créer une nouvelle branche ?
 
-Use the `git branch` command to create a new branch in a git repository. An example command is shown below. replace `<BRANCH_NAME>` with the name of the branch you want to create.
+Utilisez la commande `git branch` pour créer une nouvelle branche dans un répertoire git. Un exemple de commande est montré ci-dessous. remplacez `<BRANCH_NAME>` par le nom de la branche que vous voulez créer.
 
-It's usually a good idea to name your branch something that tells you about the changes inside that branch. In this mission we're going to create a new pixel, so it might be a good idea to name your branch something like `new-pixel`.
+C'est généralement une bonne idée de nommer votre branche avec un nom qui vous indique les changements à l'intérieur de cette branche. Dans cette mission, nous allons créer un nouveau pixel, c'est donc une bonne idée de nommer votre branche comme `new-pixel`.
 
 ```
 git branch <BRANCH_NAME>
 ```
 
-Now that you've made a new branch, let's print the list of all branches in this repository to make sure you've made it correctly.
+Maintenant que vous avez créé une nouvelle branche, affichons la liste de toutes les branches de ce répertoire pour nous assurer que vous l'avez fait correctement.
 
 ```
 git branch
 ```
 
-This should have printed a list to your terminal that includes your new branch's name. You'll also notice another branch named `master`.
+Ceci devrait afficher une liste sur votre terminal qui inclut le nom de votre nouvelle branche. Vous remarquerez également une autre branche nommée `master`.
 
-## So what is master?
+## Alors, qu'est-ce que master ?
 
-Every git repository has to have at least one branch. By convention, this default branch is usually called `master`. Frequently, this is the most current, stable version of a project. New features are developed in branches like the one we just created and then merged back into master.
+Chaque répertoire git doit avoir au moins une branche. Par convention, cette branche par défaut est généralement appelée `master`. Il s'agit souvent de la version la plus courante et la plus stable d'un projet. Les nouvelles fonctionnalités sont développées dans des branches comme celle que nous venons de créer et ensuite fusionnées dans master.
 
-In the branch list, you'll notice master has an asterisk `*` next to it. That means you're currently making changes to the `master` branch. git uses the phrase "checked out" to describe which branch you have selected.
+Dans la liste des branches, vous remarquerez que master est accompagné d'un astérisque `*`. Cela signifie que vous êtes en train d'effectuer des modifications sur la branche `master`. git utilise l'expression "checked out" pour décrire la branche que vous avez sélectionnée.
 
-## How do I use the new branch?
+## Comment utiliser la nouvelle branche ?
 
-Now that you know you're on the `master` branch and not your new branch, we should check out our new branch.
+Maintenant que vous savez que vous êtes sur la branche `master` et non sur votre nouvelle branche, nous devrions vérifier notre nouvelle branche.
 
-Git provides the `checkout` command to allow you to switch between branches. Use the following command with `<BRANCH_NAME>` replaced to switch to your new branch.
+Git fournit la commande `checkout` pour vous permettre de passer d'une branche à l'autre. Utilisez la commande suivante avec le remplacement de `<BRANCH_NAME>` pour passer à votre nouvelle branche.
 
 ```
-git checkout <BRANCH_NAME>
+git checkout <BRANCH_NAME>``
 ```
 
-If you want to switch back to master (or any other branch) in the future, run `git checkout` with a different branch name.
+Si vous voulez revenir à master (ou toute autre branche) dans le futur, lancez `git checkout` avec un nom de branche différent.
 
 ```
 git checkout master
 ```
 
-## Check my work!
+## Vérifiez mon travail !
 
-Now, you should have created your new branch and checked it out. We'll make out code change on this branch in the next objective! For now, type your branch name into the field on the right and click `HACK`!
+Maintenant, vous devriez avoir créé votre nouvelle branche et l'avoir vérifiée. Nous allons faire des changements de code sur cette branche dans le prochain objectif ! Pour l'instant, tapez le nom de votre branche dans le champ à droite et cliquez sur `HACK` !

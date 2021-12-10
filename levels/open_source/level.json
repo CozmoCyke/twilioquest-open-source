@@ -1,8 +1,8 @@
 {
-  "title": "The Forest of Open Source",
-  "description": "The Druids of Open Source have protected this sacred forest world for generations, helping those that wish to contribute to open source projects. Local reports have come in that the path to the Flame of Open Source, a sacred artifact, has been cut off. Investigate as soon as you can!",
-  "questTitle": "Rescuing the Flame of Open Source",
-  "questDescription": "Explore the forest and unblock the path to the Flame of Open Source.",
+  "title": "La forêt de l'Open Source",
+  "description": "Les druides de l'Open Source protègent ce monde forestier sacré depuis des générations, en aidant ceux qui souhaitent contribuer aux projets open source. Selon des rapports locaux, le chemin menant à la Flamme de l'Open Source, un artefact sacré, a été coupé. Enquêtez dès que vous le pouvez !",
+  "questTitle": "Sauver la flamme de l'Open Source",
+  "questDescription": "Explorez la forêt et débloquez le chemin vers la flamme de l'Open Source.",
   "navMap": {
     "x": 75,
     "y": 10,

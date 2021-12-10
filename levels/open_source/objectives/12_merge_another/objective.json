@@ -1,29 +1,29 @@
 {
-  "title": "Contributing to Open Source: Another One",
-  "description": "You know how to make an open source contribution now! Try contributing to another open source project.",
-  "show_ide": false,
-  "validation_fields": [
+  " title " : "Contribuer à l'Open Source : Un autre",
+  "description" : "Vous savez maintenant comment faire une contribution open source ! Essayez de contribuer à un autre projet open source.",
+  "show_ide" : false,
+  "validation_fields" : [
     {
-      "name": "repositoryOwner",
-      "type": "text",
-      "placeholder": "twilio-labs",
-      "label": "Enter the username of the group that owns the repository you contributed to here!"
+      "name" : "repositoryOwner",
+      "type" : "text",
+      "placeholder" : "twilio-labs",
+      "label" : "Entrez le nom d'utilisateur du groupe propriétaire du répertoire auquel vous avez contribué ici !"
     },
     {
-      "name": "repository",
-      "type": "text",
-      "placeholder": "open-pixel-art",
-      "label": "Enter the name of the repository you contributed to here!"
+      "name" : "repository",
+      "type" : "text",
+      "placeholder" : "open-pixel-art",
+      "label" : "Entrez le nom du dépôt auquel vous avez contribué ici !"
     },
     {
-      "name": "prNumber",
-      "type": "text",
-      "placeholder": "1",
-      "label": "Enter the number of the pull request you create here!"
+      "name" : "prNumber",
+      "type" : "text",
+      "placeholder" : "1",
+      "label" : "Entrez le numéro de la demande de publication que vous créez ici !"
     }
   ],
-  "rewards": {
-    "xp": 500,
-    "items": []
+  " rewards " : {
+    "xp" : 500,
+    "items" : []
   }
 }

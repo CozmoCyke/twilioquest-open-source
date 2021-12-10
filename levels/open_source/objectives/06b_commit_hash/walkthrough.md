@@ -1,31 +1,31 @@
-# Git Logging
+## Git Logging
 
-## What is a commit hash?
+## Qu'est-ce qu'un hash de commit ?
 
-Git works by tracking a series of snapshots of your code as a list of commits. This commit list is called a repository's `git history`. In order to find this snapshots later, they're each assigned a long, random, unique string called a `commit hash`.
+Git fonctionne en suivant une série d'instantanés de votre code comme une liste de commits. Cette liste de commit est appelée `git history` d'un dépôt. Afin de retrouver ces instantanés plus tard, on leur attribue à chacun une chaîne longue, aléatoire et unique appelée `commit hash`.
 
-## Git history
+## Historique Git
 
-You can view your repository's git history by running the `git log` command in your terminal. This will open a list of every single commit on your repository in the terminal. You can `scroll up and down this list with your arrow keys` starting with the most recent and working all the way back to the very first commit. You can `exit this view by hitting the Q` key.
+Vous pouvez voir l'historique git de votre répertoire en exécutant la commande `git log` dans votre terminal. Cela ouvrira une liste de tous les commits de votre dépôt dans le terminal. Vous pouvez `faire défiler cette liste avec les touches fléchées` en commençant par le plus récent et en remontant jusqu'au tout premier commit. Vous pouvez `sortir de cette vue en appuyant sur la touche Q`.
 
-## Fine tuning the log
+## Réglage fin du journal
 
-As you can imagine, scrolling through every single commit in a git history would be overwhelming and not very effective. To help with that, `git log` comes with [a lot of options](https://git-scm.com/docs/git-log) for fine tuning your search results!
+Comme vous pouvez l'imaginer, faire défiler chaque commit dans l'historique git serait accablant et pas très efficace. Pour vous aider, `git log` est livré avec [beaucoup d'options](https://git-scm.com/docs/git-log) pour affiner vos résultats de recherche !
 
-## Just my commits!
+## Juste mes commits !
 
-To find your pixel commit, we're going to look at using the `--author` flag!
+Pour trouver votre pixel commit, nous allons regarder en utilisant le drapeau `--author` !
 
-One of the options `git log` provides will allow you to filter out commits only by a provided author. Run this command to see only your git commits!
+Une des options de `git log` vous permet de filtrer les commits uniquement par un auteur donné. Exécutez cette commande pour ne voir que vos commits git !
 
 ```
 git log --author="<%= env.TQ_LOCAL_GIT_USER_NAME.value %>"
 ```
 
-## What's my hash?
+## Quel est mon hachage ?
 
-After you ran `git log` with the author flag, you will see a lot of information like the author, date, and message of the commit. At the top of your commit you will see a long string like `b256b5e67556d331ca6876d137db4f61a1eb031a`. That is your commit hash!
+Après avoir lancé `git log` avec le drapeau author, vous verrez beaucoup d'informations comme l'auteur, la date et le message du commit. En haut de votre commit, vous verrez une longue chaîne comme `b256b5e67556d331ca6876d137db4f61a1eb031a`. C'est le hash de votre commit !
 
-## Verify
+## Vérifier
 
-Copy that commit hash string for your pixel commit into the field on the right and hit `HACK`!
+Copiez la chaîne de hachage de votre commit dans le champ à droite et cliquez sur `HACK` !

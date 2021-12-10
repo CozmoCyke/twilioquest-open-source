@@ -1,9 +1,9 @@
-# Git Set Up
+# Définir à Git
 
-To complete this challenge, you must [install the git command line tools](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) on your computer. You can verify that git is installed on your computer by using the following command in a terminal interface:
+Pour relever ce défi, vous devez [installer les outils de ligne de commande git] (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) sur votre ordinateur. Vous pouvez vérifier que git est installé sur votre ordinateur en utilisant la commande suivante dans une interface de terminal :
 
 ```bash
 git --version
 ```
 
-Once you have verified that `git` is installed and available on your [system path](https://en.wikipedia.org/wiki/PATH_(variable)), click the *HACK* button.
+Une fois que vous avez vérifié que `git` est installé et disponible sur votre [chemin système](https://en.wikipedia.org/wiki/PATH_(variable)), cliquez sur le bouton *HACK*.

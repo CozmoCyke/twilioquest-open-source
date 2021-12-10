@@ -1,76 +1,76 @@
-# Pushing Upstream
+# Pousser en amont
 
-## Local vs Remote
+## Local contre distant
 
-Git repositories come in two flavors depending on where they're located. The version that you cloned onto your own computer is called a `local` repository. The original version on GitHub and your copy that you forked are called `remote` repositories.
+Les dépôts Git sont de deux sortes, selon l'endroit où ils se trouvent. La version que vous avez clonée sur votre propre ordinateur est appelée un répertoire `local`. La version originale sur GitHub et la copie que vous avez forgée sont appelées des dépôts `distants`.
 
-Right now, your new pixel change only lives on your computer in a local repository. In order to share it with the world, you need to send it upstream to a remote repository.
+Pour l'instant, votre nouvelle modification de pixel ne se trouve que sur votre ordinateur, dans un dépôt local. Afin de la partager avec le monde entier, vous devez l'envoyer en amont vers un dépôt distant.
 
-We'll be doing this with the `git push` command. We need to add some arguments and flags to this command before we run it though.
+Nous allons faire cela avec la commande `git push`. Nous devons ajouter quelques arguments et drapeaux à cette commande avant de l'exécuter.
 
-## Upstream
+## En amont
 
-The process of sending local changes to a remote repostiory is called pushing upstream in git. "Upstream" is a term that refers to the remote branch of the same name as the one you're working on locally.
+Le processus d'envoi de modifications locales à un dépôt distant est appelé push upstream dans git. "Upstream" est un terme qui fait référence à la branche distante du même nom que celle sur laquelle vous travaillez localement.
 
-When you made your branch earlier with the `git branch` command, you only created it locally. We need to use the `--set-upstream` flag when we push in order to create your branch on the remote repository as well.
+Lorsque vous avez créé votre branche plus tôt avec la commande `git branch`, vous l'avez seulement créée localement. Nous devons utiliser le drapeau `--set-upstream` lorsque nous poussons afin de créer votre branche sur le répertoire distant également.
 
-Our command now looks like:
+Notre commande ressemble maintenant à :
 
-```bash
+``bash
 git push --set-upstream
 ```
 
-## Where is upstream? Origin!
+## Où est upstream ? A l'origine !
 
-The `--set-upstream` flag is the first part of our puzzle! However, upstream doesn't know where to find our remote repository yet. Run the following command in your terminal:
+Le drapeau `--set-upstream` est la première partie de notre puzzle ! Cependant, upstream ne sait pas encore où trouver notre dépôt distant. Exécutez la commande suivante dans votre terminal :
 
-```bash
-git remote  -v
+``bash
+git remote -v
 ```
 
-You'll see a few lines that look like this:
+Vous verrez quelques lignes qui ressemblent à ceci :
 
-```bash
-origin	https://github.com/<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art.git (fetch)
-origin	https://github.com/<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art.git (push)
+``bash
+origin https://github.com/<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art.git (fetch)
+origin https://github.com/<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art.git (push)
 ```
 
-You might recognize these URLs as the same ones you cloned to create your original local copy of the your Open Pixel Art fork. That's because `git` has linked our remote fork for us.
+Vous pouvez reconnaître ces URLs comme étant les mêmes que celles que vous avez clonées pour créer votre copie locale originale de votre fork Open Pixel Art. C'est parce que `git` a lié notre Fork distant pour nous.
 
-To the left of those URLs you'll see the word `origin`. This is the default name that git assigns to your first linked remote repository when you do an intial git clone.
+A gauche de ces URLs, vous verrez le mot `origin`. C'est le nom par défaut que git assigne à votre premier répertoire distant lié lorsque vous faites un clone initial de git.
 
-To specify that we want to push upstream to our `origin` remote repository, we need to add it as a parameter after the `--set-upstream` flag.
+Pour spécifier que nous voulons pousser en amont vers notre répertoire distant `origin`, nous devons l'ajouter comme paramètre après le drapeau `--set-upstream`.
 
-Our command now looks like this:
+Notre commande ressemble maintenant à ceci :
 
-```bash
+``bash
 git push --set-upstream origin
 ```
 
-## What do we call it?
+## Comment on l'appelle ?
 
-The last thing git needs to know about how we're pushing our local branch to our remote repository is the branch name. We want to call our new remote branch the same thing as our local branch name.
+La dernière chose que git doit savoir sur la façon dont nous poussons notre branche locale vers notre dépôt distant est le nom de la branche. Nous voulons que notre nouvelle branche distante porte le même nom que notre branche locale.
 
-Pass the name of your local branch you've been worknig on as the final paramter to our `git push` command.
+Passez le nom de la branche locale sur laquelle vous avez travaillé comme paramètre final de la commande `git push`.
 
-Your final command should look like this:
+Votre commande finale devrait ressembler à ceci :
 
-```bash
+``bash
 git push --set-upstream origin <%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>
 ```
 
-Go ahead and run it! You'll be prompted to enter your GitHub username and password and then everything should be uploaded to GitHub.
+Allez-y et exécutez-le ! Vous serez invité à entrer votre nom d'utilisateur et votre mot de passe GitHub, puis tout devrait être téléchargé sur GitHub.
 
-## Verify
+## Vérifier
 
-Check it out on your GitHub repository to make sure your branch is there now.
+Vérifiez sur votre dépôt GitHub pour vous assurer que votre branche y est maintenant.
 
-The url for your new branch should look something like the following:
+L'url de votre nouvelle branche devrait ressembler à ce qui suit :
 
 [https://github.com/<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art/tree/<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>](https://github.com/<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art/tree/<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>)
 
-You can also navigate to this view using GitHub's UI, there's no need to memorize URLs.
+Vous pouvez également naviguer vers cette vue en utilisant l'interface utilisateur de GitHub, il n'y a pas besoin de mémoriser les URLs.
 
-## Hack!
+## Hack !
 
-Once you've pushed your local branch to your remote fork, go ahead and press `HACK`!
+Une fois que vous avez poussé votre branche locale vers votre Fork distant, allez-y et appuyez sur `HACK` !

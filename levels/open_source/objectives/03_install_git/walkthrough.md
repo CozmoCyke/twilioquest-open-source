@@ -1,35 +1,35 @@
-# Installing Git
+## Installer Git
 
-## What is git?
+## Qu'est-ce que git ?
 
-Git is a type of tool called version control software. Version control software allows you to collaborate with other developers by maintaining a list of all the changes your codebase has undergone.
+Git est un type d'outil appelé logiciel de contrôle de version. Le logiciel de contrôle de version vous permet de collaborer avec d'autres développeurs en maintenant une liste de toutes les modifications que votre base de code a subies.
 
-Each of the changes is stored in git as a snapshot of your code at a certain point in time. Git calls these snapshots "commits". The full list of commits is shared on your local computer and a remote server like GitHub. Now, anyone with permission can access the list of code changes using `git`.
+Chacune des modifications est stockée dans git comme un instantané de votre code à un moment donné. Git appelle ces instantanés des "commits". La liste complète des commits est partagée sur votre ordinateur local et sur un serveur distant comme GitHub. Maintenant, n'importe qui avec la permission peut accéder à la liste des changements de code en utilisant `git`.
 
-We'll make our first local commit once we get to the center of the maze!
+Nous ferons notre premier commit local une fois que nous serons au centre du labyrinthe !
 
-## Follow git's instructions to install
+## Suivez les instructions d'installation de git
 
-Git is a command line tool, which means you'll need to be familiar with how to open something like Terminal on MacOS or PowerShell on Windows.
+Git est un outil en ligne de commande, ce qui signifie que vous devrez être familier avec la façon d'ouvrir quelque chose comme Terminal sur MacOS ou PowerShell sur Windows.
 
-There are other tools, like GitHub Desktop, that wrap command line git in a graphical user interface. This can be helpful and often powerful enough for most use cases!
+Il existe d'autres outils, comme GitHub Desktop, qui intègrent git en ligne de commande dans une interface utilisateur graphique. Cela peut être utile et souvent assez puissant pour la plupart des cas d'utilisation !
 
-This mission will require, and walk through the usage of command line `git`. The git website maintains a list of [instructions for how to install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) on various different operating systems. Follow these instructions!
+Cette mission va nécessiter l'utilisation de la ligne de commande `git`. Le site web de git maintient une liste d'[instructions pour installer git] (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) sur différents systèmes d'exploitation. Suivez ces instructions !
 
-If the command line version doesn't click with you, give GitHub Desktop a try after this mission!
+Si la version en ligne de commande ne vous convient pas, essayez GitHub Desktop après cette mission !
 
-## Hack away!
+## Manipulez !
 
-Follow the [official git installation instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Once you've done that, run the following command in your terminal to ensure `git` is installed correctly.
+Suivez les [instructions officielles d'installation de git] (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Une fois que vous avez fait cela, exécutez la commande suivante dans votre terminal pour vous assurer que `git` est installé correctement.
 
 ```
 git --version
 ```
 
-If git is installed correctly, you should see text that looks like this:
+Si git est correctement installé, vous devriez voir un texte qui ressemble à ceci :
 
 ```
 git version 2.22.0
 ```
 
-Once you've verified you have `git` installed locally, click `HACK`.
+Une fois que vous avez vérifié que `git` est installé localement, cliquez sur `HACK`.

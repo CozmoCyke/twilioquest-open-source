@@ -48,8 +48,8 @@ module.exports = async function (event, world) {
         });
 
         world.showNotification(`
-          <i>I think I need to speak to the village leader before I can move
-          further into the forest.</i>
+          <i>Je pense que je dois parler au chef du village avant de pouvoir aller
+          plus loin dans la forêt.</i>
         `);
 
         await world.wait(3000);
@@ -93,8 +93,8 @@ module.exports = async function (event, world) {
         });
 
         world.showNotification(`
-          <i>It would appear the way down into the forest is clear.
-          Now, to find the <em>Flame of Open Source...</em></i>
+          <i>Il semblerait que la voie vers la forêt soit libre.
+          Maintenant, pour trouver la <em>Flamme du logiciel libre...</em></i>
         `);
 
         await world.wait(3000);
@@ -117,8 +117,8 @@ module.exports = async function (event, world) {
 
   updateQuestLogWhenComplete({
     notification:
-      'I\'ve completed everything in the <span class="highlight">Forest of Open Source</span> for now!',
-    log: "I've completed everything in the Forest of Open Source for now!",
+      'J\'ai terminé tout ce qu\'il y a dans le <span class="highlight">La forêt de l\'Open Source</span> pour l\'instant !',
+    log: "J'ai terminé tout ce qui concerne la forêt de l'Open Source pour l'instant !",
     event,
     world,
     worldStateKey: WORLD_STATE_KEY,

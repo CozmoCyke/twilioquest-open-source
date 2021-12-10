@@ -17,7 +17,7 @@ module.exports = async helper => {
 
     if (pixelFileExists !== 'file') {
       helper.fail(
-        `We could not find the pixels.json file in your provided repository! Has it been removed? -> ${pixelsPath}`
+        `Nous n'avons pas trouvé le fichier pixels.json dans le dépôt que vous avez fourni ! A-t-il été supprimé ? -> ${pixelsPath}`
       );
       return;
     }
@@ -29,7 +29,7 @@ module.exports = async helper => {
 
     if (!isPixelPresentWithUsername) {
       helper.fail(
-        `We didn't find a pixel in the _data/pixels.json file with your git username, ${TQ_GITHUB_USERNAME}!`
+        `Nous n'avons pas trouvé de pixel dans le fichier _data/pixels.json avec votre nom d'utilisateur git, ${TQ_GITHUB_USERNAME}!`
       );
       return;
     }
@@ -60,17 +60,17 @@ module.exports = async helper => {
 
     if (!gitPixelsCommitLog.stdout.includes(TQ_LOCAL_GIT_USER_NAME)) {
       helper.fail(
-        `We didn't find a commit with your git username, ${TQ_LOCAL_GIT_USER_NAME}, on it for the "_data/pixels.json" file! Have you committed your changes?`
+        `Nous n'avons pas trouvé de commit avec votre nom d'utilisateur git., ${TQ_LOCAL_GIT_USER_NAME}, pour le fichier "_data/pixels.json" ! Avez-vous validé vos modifications ?`
       );
       return;
     }
 
     helper.success(
-      `It looks like you've correctly added and committed your new pixel!`
+      `Il semble que vous ayez correctement ajouté et validé votre nouveau pixel!`
     );
   } catch (err) {
     helper.fail(
-      `We ran into a problem trying to validate you added your new pixel!
+      `Nous avons rencontré un problème en essayant de valider l'ajout de votre nouveau pixel !
       
       ${JSON.stringify(err, undefined, 2)}`
     );

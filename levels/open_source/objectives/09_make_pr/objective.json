@@ -1,17 +1,17 @@
 {
-  "title": "Contributing to Open Source: Open a Pull Request",
-  "description": "Submit your contribution to the project by creating a <strong>pull request</strong>.",
-  "show_ide": false,
-  "validation_fields": [
+  " title " : "Contribuer à l'Open Source : Ouvrir une demande de publication",
+  "description" : "Soumettez votre contribution au projet en créant une <strong>requête de tirage</strong>",
+  "show_ide" : false,
+  "validation_fields" : [
     {
-      "name": "prNumber",
-      "type": "text",
-      "placeholder": "pull request number",
-      "label": "Enter the number of the pull request you create here!"
+      "name" : "prNumber",
+      "type" : "text",
+      "placeholder" : "numéro de demande de publication",
+      "label" : "Entrez le numéro de la demande de publication que vous créez ici !"
     }
   ],
-  "rewards": {
-    "xp": 100,
-    "items": ["github_hoodie"]
+  " rewards " : {
+    "xp" : 100,
+    "items" : ["github_hoodie"]
   }
 }

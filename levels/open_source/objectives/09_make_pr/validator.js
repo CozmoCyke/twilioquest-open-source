@@ -14,8 +14,8 @@ module.exports = async helper => {
 
     if (response.statusCode !== 200) {
       helper.fail(
-        `We could not find the Pull Request #${prNumber} on the Open Pixel Art remote repository"!`
-      );
+        `Nous n'avons pas trouvé la Pull Request #${prNumber} sur le répertoire distant d'Open Pixel Art"!`
+        ) ;
       return;
     }
 
@@ -25,18 +25,18 @@ module.exports = async helper => {
 
     if (prOwner !== TQ_GITHUB_USERNAME) {
       helper.fail(
-        `We found the Pull Request #${prNumber} on the Open Pixel Art remote repository, but it doesn't belong to your GitHub user "${TQ_GITHUB_USERNAME}"!`
-      );
+        `Nous avons trouvé la Pull Request #${prNumber} sur le dépôt distant Open Pixel Art, mais elle n'appartient pas à votre utilisateur GitHub "${TQ_GITHUB_USERNAME}"!`
+      ) ;
       return;
     }
 
     return helper.success(
-      `We found your Pull Request #${prNumber} on the Open Pixel Art remote repository for your GitHub user "${TQ_GITHUB_USERNAME}"!`,
-      [{ name: 'OPEN_PIXEL_ART_PR_NUMBER', value: prNumber }]
+      `Nous avons trouvé votre demande de retrait #${prNumber} sur le répertoire distant d'Open Pixel Art pour votre utilisateur GitHub "${TQ_GITHUB_USERNAME}"!`,
+      [{nom : 'OPEN_PIXEL_ART_PR_NUMBER', valeur : prNumber }]
     );
   } catch (err) {
     helper.fail(
-      `Something went wrong when we tried to validate your Open Pixel Art pull request!
+      `Quelque chose s'est mal passé lorsque nous avons essayé de valider votre demande de publication Open Pixel Art !
       
       ${err}`
     );

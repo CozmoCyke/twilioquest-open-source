@@ -1,17 +1,17 @@
 {
-  "title": "Contributing to Open Source: Push Upstream",
-  "description": "Now that you have made your change, <strong>push your change upstream</strong> to your forked repository on GitHub.",
-  "show_ide": false,
-  "validation_fields": [
+  " title " : "Contribuer à l'Open Source : Pousser en amont",
+  "description" : "Maintenant que vous avez effectué votre modification, <strong>poussez votre modification en amont</strong> vers votre répertoire forked sur GitHub.",
+  "show_ide" : false,
+  "validation_fields" : [
     {
-      "name": "prompt",
-      "type": "prompt",
-      "placeholder": "",
-      "label": "Click HACK once you've pushed your pixel upstream!"
+      "name" : "prompt",
+      "type" : "prompt",
+      "placeholder" : "",
+      "label" : "Cliquez sur HACK une fois que vous avez poussé votre pixel en amont !"
     }
   ],
-  "rewards": {
-    "xp": 100,
-    "items": []
+  " rewards " : {
+    "xp" : 100,
+    "items" : []
   }
 }

@@ -1,17 +1,17 @@
 {
-  "title": "Contributing to Open Source: Commit Hash",
-  "description": "You found a secret chest! Learn how to find the commit hash for your changes to open it.",
-  "show_ide": false,
-  "validation_fields": [
+  "titre" : "Contribuer à l'Open Source : Commit Hash",
+  "description" : "Vous avez trouvé un coffre secret ! Apprenez à trouver le hash de commit de vos modifications pour l'ouvrir.",
+  "show_ide" : false,
+  "validation_fields" : [
     {
-      "name": "commitHash",
-      "type": "text",
-      "placeholder": "XXXXXXXXXXXXXXXXXX",
-      "label": "Enter the commit hash of your new pixel commit here!"
+      " name " : "commitHash",
+      "type" : "text",
+      "placeholder" : "XXXXXXXXXXXXXXXXXX",
+      "label" : "Entrez le hash de votre nouveau commit pixel ici !"
     }
   ],
-  "rewards": {
-    "xp": 200,
-    "items": []
+  " rewards " : {
+    "xp" : 200,
+    "items" : []
   }
 }

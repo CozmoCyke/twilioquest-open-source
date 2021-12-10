@@ -1,55 +1,55 @@
 # Clones
 
-## What is cloning?
+## Qu'est-ce que le clonage ?
 
-One of the core things git lets you do is to make a local copy of someone else's server hosted code. The process of making this copy is called cloning. We're going to be making a local copy of the Open Pixel Art repository on GitHub using the `git clone` command.
+Une des choses essentielles que git vous permet de faire est de faire une copie locale du code hébergé sur le serveur de quelqu'un d'autre. Le processus de création de cette copie est appelé clonage. Nous allons faire une copie locale du dépôt Open Pixel Art sur GitHub en utilisant la commande `git clone`.
 
-## How do I clone?
+## Comment cloner ?
 
-The git command line tool provides a command called `clone` to enable you to do this. This command requires you to get the URL for the git repository you want to clone.
+L'outil de ligne de commande git fournit une commande appelée `clone` pour vous permettre de faire cela. Cette commande vous demande d'obtenir l'URL du dépôt git que vous voulez cloner.
 
-GitHub maintains [documentation about how to obtain the URL](https://help.github.com/en/articles/cloning-a-repository) for a GitHub hosted repository. This article walks you through the entire process of cloning, but we'll walk through it here too.
+GitHub maintient une [documentation sur la façon d'obtenir l'URL] (https://help.github.com/en/articles/cloning-a-repository) pour un dépôt hébergé par GitHub. Cet article vous accompagne tout au long du processus de clonage, mais nous allons également le parcourir ici.
 
-From GitHub you should find a URL that starts with `https://` and ends in `.git`. It should look something like this:
+Depuis GitHub, vous devriez trouver une URL qui commence par `https://` et se termine par `.git`. Cela devrait ressembler à quelque chose comme ceci :
 
 ```
 https://github.com/twilio-labs/open-pixel-project
 ```
 
-Once you have this URL you're going to run the `git clone` command in your terminal with the URL after it like this:
+Une fois que vous avez cette URL, vous allez lancer la commande `git clone` dans votre terminal avec l'URL après comme ceci :
 
 ```
 git clone https://github.com/twilio-labs/open-pixel-project
 ```
 
-Now the cloning process will begin!
+Maintenant le processus de clonage va commencer !
 
-## Change directory
+## Changez de répertoire
 
-Once the repository finishes cloning, you can now open these new files. They'll be an exact copy of the files in their current state on GitHub.
+Une fois que le répertoire a terminé le clonage, vous pouvez maintenant ouvrir ces nouveaux fichiers. Ils seront une copie exacte des fichiers dans leur état actuel sur GitHub.
 
-To validate the clone worked correctly, we're going to need the full file path of our newly cloned project. Type the following change directory command, `cd`, to enter your new directory.
+Pour valider que le clonage a fonctionné correctement, nous allons avoir besoin du chemin d'accès complet de notre projet nouvellement cloné. Tapez la commande suivante de changement de répertoire, `cd`, pour entrer dans votre nouveau répertoire.
 
 ```
 cd open-pixel-art
 ```
 
-If you run the list command, `ls` (or `dir` on Windows), you should now see a list of file names like `package.json` and `README.md`.
+Si vous lancez la commande list, `ls` (ou `dir` sous Windows), vous devriez maintenant voir une liste de noms de fichiers comme `package.json` et `README.md`.
 
 ```
 ls
 ```
 
-## Present Working directory
+## Répertoire de travail actuel
 
-Now that we have our newly cloned repository open in our terminal, we need to get its path. We can run the present working directory command, `pwd`, to figure this path out.
+Maintenant que nous avons notre répertoire nouvellement cloné ouvert dans notre terminal, nous avons besoin d'obtenir son chemin. Nous pouvons exécuter la commande present working directory, `pwd`, pour déterminer ce chemin.
 
 ```
 pwd
 ```
 
-If you open this directory in your file explorer or text editor of choice you will also be able to view your clone of the Open Pixel Art repository.
+Si vous ouvrez ce répertoire dans votre explorateur de fichiers ou dans l'éditeur de texte de votre choix, vous pourrez également voir votre clone du répertoire Open Pixel Art.
 
-## Validate!
+## Validez !
 
-Copy the file path to your cloned repository that you got from the `pwd` command. Paste that file path into the field on the right and press `HACK`!
+Copiez le chemin d'accès à votre répertoire cloné que vous avez obtenu avec la commande `pwd`. Collez ce chemin de fichier dans le champ à droite et appuyez sur `HACK` !

@@ -4,12 +4,12 @@ module.exports = async helper => {
   try {
     await commandExists('git');
 
-    helper.success(`We found git installed on your computer!`);
+    helper.success(`Nous avons trouvé git installé sur votre ordinateur !`);
   } catch (err) {
     helper.fail(`
-      We did not find the git command on your system path. If you installed
-      git for the first time while playing TwilioQuest, you may need to quit
-      and relaunch the game for TwilioQuest to ensure the command is present.
+    Nous n'avons pas trouvé la commande git dans le chemin de votre système. Si vous avez installé
+    git pour la première fois pendant que vous jouez à TwilioQuest, il se peut que vous deviez quitter
+    et relancer le jeu TwilioQuest pour vous assurer que la commande est présente..
     `);
   }
 };

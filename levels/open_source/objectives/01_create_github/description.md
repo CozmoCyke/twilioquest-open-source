@@ -1,7 +1,7 @@
-# Git Started
+# Démarrage de Git
 
-Many open source projects (and many software companies) use [git](https://git-scm.com/) for [version control](https://en.wikipedia.org/wiki/Version_control) and collaboration. [GitHub](https://www.github.com/) is a popular platform that many open source projects use to host their [git repositories](https://git-scm.com/book/en/v1/Git-Basics-Getting-a-Git-Repository).
+De nombreux projets open source (et de nombreuses entreprises de logiciels) utilisent [git](https://git-scm.com/) pour le [contrôle de version](https://en.wikipedia.org/wiki/Version_control) et la collaboration. [GitHub](https://www.github.com/) est une plateforme populaire que de nombreux projets open source utilisent pour héberger leurs [dépôts git](https://git-scm.com/book/en/v1/Git-Basics-Getting-a-Git-Repository).
 
-The challenges to follow will take you through contributing to an open source project hosted on GitHub. The first step on that journey is [creating a free GitHub account](https://github.com/join).
+Les défis qui suivent vous permettront de contribuer à un projet open source hébergé sur GitHub. La première étape de ce voyage est la [création d'un compte GitHub gratuit] (https://github.com/join).
 
-Once you've made your free GitHub account, __enter the username you chose__ into the field on the right and press *HACK*.
+Une fois que vous avez créé votre compte GitHub gratuit, __entrez le nom d'utilisateur que vous avez choisi__ dans le champ de droite et appuyez sur *HACK*.

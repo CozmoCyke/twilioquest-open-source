@@ -1,31 +1,31 @@
-# Merge Time!
+## Il est temps de fusionner !
 
-## What is a merge?
+## Qu'est-ce qu'une fusion ?
 
-A merge is a git term for putting two branches back together again. When you forked the repository ealier and made a new branch, you created an alternate version of history with new code in it. The merge process stitches that history back into the main project so everyone can benefit from your code.
+Une fusion est un terme git pour remettre deux branches ensemble. Lorsque vous avez forké le dépôt précédemment et créé une nouvelle branche, vous avez créé une version alternative de l'historique avec du nouveau code. Le processus de fusion recolle cette histoire au projet principal pour que tout le monde puisse bénéficier de votre code.
 
-## Collaboration!
+## Collaboration !
 
-When you open a Pull Request against an open source project, you'll collaborate with the maintainers of that project to get your code merged.
+Lorsque vous ouvrez une demande de publication pour un projet open source, vous collaborez avec les mainteneurs de ce projet pour que votre code soit fusionné.
 
-For the Open Pixel Art Project, we don't need to talk to anyone! We have some tools that are automatically going to make sure your Pull Request is valid and merge it.
+Pour le projet Open Pixel Art, nous n'avons pas besoin de parler à qui que ce soit ! Nous disposons de quelques outils qui vont automatiquement vérifier que votre demande de publication est valide et la fusionner.
 
-## Merge conflicts
+## Fusionner les conflits
 
-Sometimes GitHub will tell you that you've hit a merge conflict and your code cannot be merged automatically. This means you need to help git figure out what the final code should look like.
+Parfois, GitHub vous indiquera que vous avez rencontré un conflit de fusion et que votre code ne peut pas être fusionné automatiquement. Cela signifie que vous devez aider git à déterminer à quoi le code final doit ressembler.
 
-This can be caused by many things, one of which is that two different developers have changed the same line of code at the same time.
+Cela peut être causé par de nombreuses choses, l'une d'entre elles étant que deux développeurs différents ont modifié la même ligne de code en même temps.
 
-[GitHub has information about resolving merge conflicts kept up to date](https://help.github.com/en/articles/about-merge-conflicts). Sometimes this can be resolved in their online editor and sometimes it requires a new commit be pushed.
+[GitHub dispose d'informations sur la résolution des conflits de fusion mises à jour] (https://help.github.com/en/articles/about-merge-conflicts). Parfois, ce problème peut être résolu dans l'éditeur en ligne, parfois il faut pousser un nouveau commit.
 
-## How do I know when my Pull Request has been merged?
+## Comment puis-je savoir quand ma demande de publication a été fusionnée ?
 
-When collaborating with a project's maintainers you'll need to give them time to respond to you. Once you've had your conversation and made your code changes, the owners will decide to finish the merge!
+Lorsque vous collaborez avec les responsables d'un projet, vous devez leur laisser le temps de vous répondre. Une fois que vous avez eu votre conversation et apporté vos modifications au code, les responsables décideront de terminer la fusion !
 
-You'll get notifications from GitHub [based on your settings](https://help.github.com/en/articles/about-notifications) there that can tell you when your code is merged.
+Vous recevrez des notifications de GitHub [en fonction de vos paramètres] (https://help.github.com/en/articles/about-notifications) qui vous indiqueront quand votre code sera fusionné.
 
-Since our tools will be automatically reviewing [your Pull Request](https://github.com/twilio-labs/open-pixel-art/pull/<%= env.TQ_OPEN_PIXEL_ART_PR_NUMBER.value %>), you should be able to come back to this Pull Request in a few minutes to a merged Pull Request!
+Puisque nos outils passeront automatiquement en revue [votre Pull Request](https://github.com/twilio-labs/open-pixel-art/pull/<%= env.TQ_OPEN_PIXEL_ART_PR_NUMBER.value %>), vous devriez être en mesure de revenir à cette Pull Request dans quelques minutes pour une Pull Request fusionnée !
 
-## Hack!
+## Hack !
 
-Once [your Pull Request](https://github.com/twilio-labs/open-pixel-art/pull/<%= env.TQ_OPEN_PIXEL_ART_PR_NUMBER.value %>) has been successfully merged, click `HACK` so TwilioQuest can confirm it for you!
+Une fois que [votre Pull Request](https://github.com/twilio-labs/open-pixel-art/pull/<%= env.TQ_OPEN_PIXEL_ART_PR_NUMBER.value %>) a été fusionnée avec succès, cliquez sur `HACK` pour que TwilioQuest puisse la confirmer pour vous !

@@ -1,17 +1,17 @@
 {
-  "title": "Contributing to Open Source: Sync our Fork",
-  "description": "We've made our change! Lets make sure we have all the latest changes.",
-  "show_ide": false,
-  "validation_fields": [
+  " title " : "Contribuer à l'Open Source : Synchroniser notre Fork",
+  "description" : "Nous avons fait notre changement ! Assurons-nous que nous disposons des dernières modifications.",
+  "show_ide" : false,
+  "validation_fields" : [
     {
-      "name": "prompt",
-      "type": "prompt",
-      "placeholder": "",
-      "label": "Click HACK once you've synced your repositories!"
+      " name " : "prompt",
+      "type" : "prompt",
+      "placeholder" : "",
+      "label" : "Cliquez sur HACK une fois que vous avez synchronisé vos dépôts !"
     }
   ],
-  "rewards": {
-    "xp": 0,
-    "items": []
+  " rewards " : {
+    "xp" : 0,
+    "items" : []
   }
 }

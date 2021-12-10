@@ -6,27 +6,27 @@ module.exports = async helper => {
 
   if (!repository) {
     helper.fail(
-      `Don't forget to enter the name of the repository owner who's project you contributed to!`
+      `N'oubliez pas d'entrer le nom du propriétaire du dépôt auquel vous avez contribué !`
     );
     return;
   }
 
   if (!repository) {
     helper.fail(
-      `Don't forget to enter the name of the repository you contributed to!`
+      `N'oubliez pas d'entrer le nom du répertoire auquel vous avez contribué !`
     );
     return;
   }
 
   if (!prNumber) {
     helper.fail(
-      `Don't forget to enter the number of the Pull Request you contributed with!`
+      `N'oubliez pas d'indiquer le numéro de la demande de publication à laquelle vous avez contribué !`
     );
     return;
   }
 
   if (repositoryOwner === 'twilio-labs' && repository === 'open-pixel-art') {
-    helper.fail(`You can't count your Open Pixel Art contribution again!`);
+    helper.fail(`Vous ne pouvez plus compter votre contribution à Open Pixel Art !`);
     return;
   }
 
@@ -40,7 +40,7 @@ module.exports = async helper => {
 
     if (response.statusCode !== 200) {
       helper.fail(
-        `We could not find the Pull Request #${prNumber} on ${repositoryOwner}'s repository "${repository}"!`
+        `Nous n'avons pas trouvé la demande de publication. #${prNumber} sur le  répertoire ${repository} de ${repositoryOwner}!`
       );
       return;
     }
@@ -52,31 +52,31 @@ module.exports = async helper => {
 
     if (prOwner !== TQ_GITHUB_USERNAME) {
       helper.fail(
-        `We found the Pull Request #${prNumber} on ${repositoryOwner}'s repository "${repository}", but it doesn't belong to your GitHub user "${TQ_GITHUB_USERNAME}"!`
+        `Nous avons trouvé la demande de retrait #${prNumber} sur le dépôt "${repository}" de ${repositoryOwner}, mais elle n'appartient pas à votre utilisateur GitHub "${TQ_GITHUB_USERNAME}"`
       );
       return;
     }
 
     if (isPrClosed && !isPrMerged) {
       helper.fail(
-        `We found the Pull Request #${prNumber} on ${repositoryOwner}'s repository "${repository}", but it was closed without being merged!`
+        `Nous avons trouvé la Pull Request #${prNumber} sur le dépôt "${repository}" de ${repositoryOwner}, mais elle a été fermée sans être fusionnée!`
       );
       return;
     }
 
     if (!isPrMerged) {
       helper.fail(
-        `We found the Pull Request #${prNumber} on ${repositoryOwner}'s repository "${repository}", but it has not been merged yet!`
+        `Nous avons trouvé la Pull Request #${prNumber} sur le dépôt "${repository}" de ${repositoryOwner}, mais elle n'a pas encore été fusionnée!`
       );
       return;
     }
 
     return helper.success(
-      `We found the Pull Request #${prNumber} on ${repositoryOwner}'s repository "${repository}" and it has been merged! Congratulations on your open source contribution!`
+      `Nous avons trouvé la Pull Request #${prNumber} sur le dépôt  "${repository}" de ${repositoryOwner} et elle a été fusionnée ! Félicitations pour votre contribution open source!`
     );
   } catch (err) {
     helper.fail(
-      `Something went wrong when we tried to validate if your pull request was merged!
+      `Un problème est survenu lorsque nous avons essayé de valider la fusion de votre demande de publication !
       
       ${err}`
     );

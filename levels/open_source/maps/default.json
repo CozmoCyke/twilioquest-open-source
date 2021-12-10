@@ -231,7 +231,7 @@
                         {
                          "name":"observation",
                          "type":"string",
-                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
+                         "value":"<i>Le gardien stoïque de la forêt reconnaît calmement votre présence, mais ne semble pas intéressé par une conversation futile....<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -259,7 +259,7 @@
                         {
                          "name":"observation",
                          "type":"string",
-                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
+                         "value":"<i>Le gardien stoïque de la forêt reconnaît calmement votre présence, mais ne semble pas intéressé par une conversation futile...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -287,7 +287,7 @@
                         {
                          "name":"observation",
                          "type":"string",
-                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
+                         "value":"<i>Le gardien stoïque de la forêt reconnaît calmement votre présence, mais ne semble pas intéressé par une conversation futile...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -315,7 +315,7 @@
                         {
                          "name":"observation",
                          "type":"string",
-                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
+                         "value":"<i>Le gardien stoïque de la forêt reconnaît calmement votre présence, mais ne semble pas intéressé par une conversation futile...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -338,7 +338,7 @@
                         {
                          "name":"observation",
                          "type":"string",
-                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
+                         "value":"<i>Le gardien stoïque de la forêt reconnaît calmement votre présence, mais ne semble pas intéressé par une conversation futile....<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -361,7 +361,7 @@
                         {
                          "name":"observation",
                          "type":"string",
-                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
+                         "value":"<i>Le gardien stoïque de la forêt reconnaît calmement votre présence, mais ne semble pas intéressé par une conversation futile....<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -389,7 +389,7 @@
                         {
                          "name":"observation",
                          "type":"string",
-                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
+                         "value":"<i>Le gardien stoïque de la forêt reconnaît calmement votre présence, mais ne semble pas intéressé par une conversation futile...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -452,7 +452,7 @@
                         {
                          "name":"observation",
                          "type":"string",
-                         "value":"<i>The vendors in the town square have a variety of wares from across The Cloud. You wish you have time to stop and browse.<\/i>"
+                         "value":"<i>Les vendeurs de la place ont une grande variété de produits provenant de tout le Cloud. Vous aimeriez avoir le temps de vous arrêter et de regarder..<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -470,7 +470,7 @@
                         {
                          "name":"observation",
                          "type":"string",
-                         "value":"<i>The vendors in the town square have a variety of wares from across The Cloud. You wish you have time to stop and browse.<\/i>"
+                         "value":"<i>Les vendeurs de la place ont une grande variété de produits provenant de tout le Cloud. Vous souhaitez avoir le temps de vous arrêter et de regarder.<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -488,7 +488,7 @@
                         {
                          "name":"observation",
                          "type":"string",
-                         "value":"<i>The vendors in the town square have a variety of wares from across The Cloud. You wish you have time to stop and browse.<\/i>"
+                         "value":"<i>Les vendeurs de la place ont une grande variété de produits provenant de tout le Cloud. Vous souhaitez avoir le temps de vous arrêter et de regarder.<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -600,7 +600,7 @@
                         {
                          "name":"observation",
                          "type":"string",
-                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
+                         "value":"<i>Le gardien stoïque de la forêt reconnaît calmement votre présence, mais ne semble pas intéressé par une conversation futile...<\/i>"
                         }],
                  "rotation":0,
                  "type":"triggerArea",
@@ -719,7 +719,7 @@
                         {
                          "name":"observation",
                          "type":"string",
-                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
+                         "value":"<i>Le gardien stoïque de la forêt reconnaît calmement votre présence, mais ne semble pas intéressé par une conversation futile...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -776,7 +776,7 @@
                         {
                          "name":"observation",
                          "type":"string",
-                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
+                         "value":"<i>Le gardien stoïque de la forêt reconnaît calmement votre présence, mais ne semble pas intéressé par une conversation futile...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -809,8 +809,8 @@
                         {
                          "name":"observation",
                          "type":"string",
-                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
-                        }],
+                         "value":"<i>Le gardien stoïque de la forêt reconnaît calmement votre présence, mais ne semble pas intéressé par une conversation futile... <\/i>"
+                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -837,7 +837,7 @@
                         {
                          "name":"observation",
                          "type":"string",
-                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
+                         "value":"<i>Le gardien stoïque de la forêt reconnaît calmement votre présence, mais ne semble pas intéressé par une conversation futile...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -865,7 +865,7 @@
                         {
                          "name":"observation",
                          "type":"string",
-                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
+                         "value":"<i>Le gardien stoïque de la forêt reconnaît calmement votre présence, mais ne semble pas intéressé par une conversation futile...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",

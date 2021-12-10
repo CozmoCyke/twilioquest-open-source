@@ -1,17 +1,17 @@
 {
-  "title": "Contributing to Open Source: Merge Master",
-  "description": "We've got our master branch synchronized, let's merge those changes into our new branch.",
-  "show_ide": false,
-  "validation_fields": [
+  " title " : "Contribuer à l'Open Source : Fusionner le maître",
+  "description" : "Nous avons synchronisé notre branche maître, fusionnons ces changements dans notre nouvelle branche",
+  "show_ide" : false,
+  "validation_fields" : [
     {
-      "name": "prompt",
-      "type": "prompt",
-      "placeholder": "",
-      "label": "Click HACK once you've updated your new branch via a merge!"
+      "name" : "prompt",
+      "type" : "prompt",
+      "placeholder" : "",
+      "label" : "Cliquez sur HACK une fois que vous avez mis à jour votre nouvelle branche via une fusion !"
     }
   ],
-  "rewards": {
-    "xp": 0,
-    "items": []
+  " rewards " : {
+    "xp" : 0,
+    "items" : []
   }
 }

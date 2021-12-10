@@ -1,13 +1,13 @@
 {
-  "title": "Contributing to Open Source: Join GitHub",
-  "description": "<strong>Create a GitHub account</strong> to contribute to open source projects that use GitHub to host their source code.",
+  "title": "Contribuer au Logiciel Libre : Rejoignez GitHub",
+  "description": "<strong>Créer un compte GitHub</strong> pour contribuer aux projets de Logiciel Libre qui utilisent GitHub pour héberger leur code source.",
   "show_ide": false,
   "validation_fields": [
     {
       "name": "username",
       "type": "text",
-      "placeholder": "e.g. samantha_smith99",
-      "label": "Enter your GitHub username here."
+      "placeholder": "ex. samantha_smith99",
+      "label": "Entrez votre nom d'utilisateur GitHub ici."
     }
   ],
   "rewards": {

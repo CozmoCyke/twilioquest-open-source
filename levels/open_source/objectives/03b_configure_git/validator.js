@@ -6,7 +6,7 @@ module.exports = async helper => {
   try {
     await commandExists('git');
   } catch (err) {
-    helper.fail(`We did not find command line git installed on your computer!`);
+    helper.fail(`Nous n'avons pas trouvé de ligne de commande git installée sur votre ordinateur !`);
     return;
   }
 
@@ -14,12 +14,12 @@ module.exports = async helper => {
     const gitConfigList = await exec('git config --list');
 
     if (!gitConfigList.stdout.includes('user.email=')) {
-      helper.fail(`We did not find the you email configured correctly!`);
+      helper.fail(`Nous n'avons pas trouvé l'email configuré correctement!`);
       return;
     }
 
     if (!gitConfigList.stdout.includes('user.name=')) {
-      helper.fail(`We did not find the you user name configured correctly!`);
+      helper.fail(`Nous n'avons pas trouvé votre nom d'utilisateur correctement configuré!`);
       return;
     }
 
@@ -30,11 +30,11 @@ module.exports = async helper => {
     const [, userName] = gitUserNameOption.trim().split('=');
 
     helper.success(
-      `It looks like your email and name are configured correctly!`,
+      `Il semble que votre email et votre nom soient correctement configurés !`,
       [{ name: 'LOCAL_GIT_USER_NAME', value: userName }]
     );
   } catch (err) {
-    helper.fail(`Something went wrong while tried to validate your git configuration!
+    helper.fail(`Un problème est survenu lors de la validation de votre configuration git !
     
     ${err}`);
   }

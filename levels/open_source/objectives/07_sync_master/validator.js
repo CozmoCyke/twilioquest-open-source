@@ -21,7 +21,7 @@ module.exports = async helper => {
 
     if (upstreamRemotes.length === 0) {
       helper.fail(
-        `We didn't find a local remote named "upstream"! Did you create one yet?`
+        `Nous n'avons pas trouvé de distant local nommé "upstream" ! En avez-vous déjà créé un ?`
       );
       return;
     }
@@ -34,12 +34,12 @@ module.exports = async helper => {
 
     if (!isUpstreamUrlCorrect) {
       helper.fail(
-        `We found your "upstream" remote, but it doesn't seem to have the correct URL.
+        `Nous avons trouvé votre distant "upstream", mais il ne semble pas avoir l'URL correcte.
         
-        It should look like this:
+        Elle devrait ressembler à ceci :
         https://github.com/twilio-labs/open-pixel-art.git
         
-        Run git remote -v in your terminal to verify it!`
+        Exécutez git remote -v dans votre terminal pour le vérifier !`
       );
       return;
     }
@@ -52,7 +52,7 @@ module.exports = async helper => {
     );
 
     if (openPixelArtResponse.statusCode !== 200) {
-      helper.fail(`We couldn't connect to the Open Pixel Art repository!
+      helper.fail(`Nous n'avons pas pu nous connecter au répertoire Open Pixel Art !
       
       ${openPixelArtResponse.statusMessage}`);
       return;
@@ -66,7 +66,7 @@ module.exports = async helper => {
     );
 
     if (playerResponse.statusCode !== 200) {
-      helper.fail(`We couldn't find the "open-pixel-art" repository for your user "${TQ_GITHUB_USERNAME}"!
+      helper.fail(`Nous n'avons pas trouvé le dépôt "open-pixel-art" pour votre utilisateur. "${TQ_GITHUB_USERNAME}"!
       
       ${playerResponse.statusMessage}`);
       return;
@@ -77,17 +77,17 @@ module.exports = async helper => {
       JSON.parse(openPixelArtResponse.body).commit.sha
     ) {
       helper.fail(
-        `The Open Pixel Art repository and the "open-pixel-art" repository for your user "${TQ_GITHUB_USERNAME} are out of sync"! New changes may've been added since your last sync. Try syncing again!`
+        `Le dépôt Open Pixel Art et le dépôt "open-pixel-art" pour votre utilisateur "${TQ_GITHUB_USERNAME} ne sont pas synchronisés" ! De nouveaux changements ont pu être ajoutés depuis votre dernière synchronisation. Essayez de vous synchroniser à nouveau !`
       );
       return;
     }
 
     return helper.success(
-      `The Open Pixel Art repository and the "open-pixel-art" repository for your user "${TQ_GITHUB_USERNAME} are in sync! These may get out of sync in the future as other users make changes to the repository!`
+      `Le dépôt Open Pixel Art et le dépôt "open-pixel-art" pour votre utilisateur "${TQ_GITHUB_USERNAME} sont synchronisés ! Elles peuvent se désynchroniser à l'avenir si d'autres utilisateurs apportent des modifications au répertoire!`
     );
   } catch (err) {
     helper.fail(
-      `Something went wrong when we tried to validate if your Open Pixel Art fork was synchronized!
+      `Quelque chose s'est mal passé lorsque nous avons essayé de valider si votre fork Open Pixel Art était synchronisé !
       
       ${err}`
     );

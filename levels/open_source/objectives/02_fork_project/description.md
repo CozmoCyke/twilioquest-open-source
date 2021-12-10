@@ -1,5 +1,5 @@
-# What the Fork?
+# Qu'est-ce qu'un Fork ?
 
-To complete this objective, [create a fork](https://help.github.com/en/articles/fork-a-repo) of an open source git repository. We have created a project to help you practice called [Open Pixel Art](https://github.com/twilio-labs/open-pixel-art).
+Pour réaliser cet objectif, [créer un fork](https://help.github.com/en/articles/fork-a-repo) d'un repo git à code source ouvert. Nous avons créé un projet pour vous aider à vous entraîner, appelé [Open Pixel Art](https://github.com/twilio-labs/open-pixel-art).
 
-Once you have [created a fork](https://help.github.com/en/articles/fork-a-repo) of [Open Pixel Art](https://github.com/twilio-labs/open-pixel-art) under your own GitHub account, click the *HACK* button. For more context on how repositories and forks work, check out the help section!
+Une fois que vous avez [créé un fork](https://help.github.com/en/articles/fork-a-repo) de [Open Pixel Art](https://github.com/twilio-labs/open-pixel-art) sous votre propre compte GitHub, cliquez sur le bouton *HACK*. Pour en savoir plus sur le fonctionnement des repo et des forks, consultez la section d'aide !

@@ -1,9 +1,9 @@
-# Be the Change You Want To See
+# Soyez le changement que vous voulez voir
 
-The next step on your journey is to submit your change to the project by creating a [pull request](https://help.github.com/en/articles/about-pull-requests). When you submit a pull request on GitHub, it is given a __number__. You'll find the number at the end of the URL for the pull request, like so:
+L'étape suivante consiste à soumettre votre modification au projet en créant une [pull request] (https://help.github.com/en/articles/about-pull-requests). Lorsque vous soumettez une demande de publication sur GitHub, un __numéro__ lui est attribué. Vous trouverez ce numéro à la fin de l'URL de la demande de publication, comme suit :
 
-```bash
-https://github.com/twilio-labs/open-pixel-art/pull/<PULL_REQUEST_NUMBER>
+``bash
+https://github.com/twilio-labs/open-pixel-art/pull/<numéro de demande de publication>
 ```
 
-You can [see all your open pull requests here](https://github.com/pulls). Enter the pull request number into the text field on the right and click *HACK*.
+Vous pouvez [voir toutes vos demandes de publication ouvertes ici] (https://github.com/pulls). Entrez le numéro de la demande de publication dans le champ de texte à droite et cliquez sur *HACK*.

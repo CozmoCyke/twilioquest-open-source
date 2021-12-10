@@ -1,7 +1,7 @@
-# Merging
+# Fusion
 
-The final step on your open source journey is to get your Pull Request merged. This is a collaborative process where you work with the maintainers of the repository you're contributing to. You'll leave comments for each other on the Pull Request and update your code until it's in a state the maintainer is happy with.
+La dernière étape de votre parcours dans l'open source consiste à faire fusionner votre demande de publication. Il s'agit d'un processus de collaboration dans lequel vous travaillez avec les mainteneurs du répertoire auquel vous contribuez. Vous laissez des commentaires sur la demande de publication et mettez à jour votre code jusqu'à ce qu'il soit dans un état satisfaisant pour le mainteneur.
 
-The pull requests to the Open Pixel Art project are controlled automatically by a few different tools. If anything goes wrong, the bots will leave comments on your pull request asking for changes to be made.
+Les demandes de publication du projet Open Pixel Art sont contrôlées automatiquement par différents outils. Si quelque chose ne va pas, les robots laisseront des commentaires sur votre demande de publication pour demander que des modifications soient apportées.
 
-Once [your Pull Request](https://github.com/twilio-labs/open-pixel-art/pull/<%= env.TQ_OPEN_PIXEL_ART_PR_NUMBER.value %>) is automatically merged, click `HACK` on the left to open this chest!
+Une fois que [votre Pull Request] (https://github.com/twilio-labs/open-pixel-art/pull/<%= env.TQ_OPEN_PIXEL_ART_PR_NUMBER.value %>) est automatiquement fusionnée, cliquez sur `HACK` à gauche pour ouvrir ce coffre !

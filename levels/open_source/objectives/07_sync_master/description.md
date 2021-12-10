@@ -1,5 +1,5 @@
-# Sync our Fork
+# Synchroniser notre fork
 
-While we've been working on our fork of the Open Pixel Art project other developers around the world might have been working on it too! We need to synchronize their changes with ours before we share.
+Pendant que nous travaillions sur notre fork du projet Open Pixel Art, d'autres développeurs dans le monde entier ont pu travailler sur le même projet ! Nous devons synchroniser leurs changements avec les nôtres avant de les partager.
 
-We're going to learn how to link our local repository's upstream remote to the open-pixel-art reposistory, fetch the latest changes, and merge them into our local branch. Once we've done all that, click `HACK!`.
+Nous allons apprendre comment lier le dépôt amont distant de notre dépôt local au dépôt open-pixel-art, récupérer les derniers changements et les fusionner dans notre branche locale. Une fois que nous avons fait tout cela, cliquez sur `HACK!`.

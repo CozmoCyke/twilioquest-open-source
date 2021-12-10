@@ -1,15 +1,15 @@
-# Lets Make a GitHub Account
+## Créons un compte GitHub
 
-## What is GitHub?
+## Qu'est-ce que GitHub ?
 
-GitHub is a website that hosts open source code on the internet so that developers around the world can collaborate on it remotely. It runs on a technology for code sharing called `git` that we will learn a little about in later objectives.
+GitHub est un site Web qui héberge du code source ouvert sur Internet afin que les développeurs du monde entier puissent collaborer à distance. Il fonctionne sur une technologie de partage de code appelée `git` que nous apprendrons un peu plus tard dans les objectifs.
 
-## GitHub Signup Process
+## Processus d'inscription à GitHub
 
-Follow the GitHub sign up process to [create a new user account](https://github.com/join). You will only need a free plan to complete this objective, and as long as you're working on open source software you'll only ever need the free plan!
+Suivez le processus d'inscription à GitHub pour [créer un nouveau compte utilisateur] (https://github.com/join). Vous n'aurez besoin que d'un plan gratuit pour réaliser cet objectif, et tant que vous travaillerez sur des logiciels libres, vous n'aurez besoin que du plan gratuit !
 
-After you create your account, you should receive an email asking you to validate your email address. Be sure to follow those instructions so that you can start using your GitHub account!
+Après avoir créé votre compte, vous devriez recevoir un courriel vous demandant de valider votre adresse électronique. Assurez-vous de suivre ces instructions afin de pouvoir commencer à utiliser votre compte GitHub !
 
-## Hack this Barrier
+## Franchissez cette barrière
 
-Now that you have a validated GitHub user account, enter the username you chose into the field on the right and press `HACK`!
+Maintenant que vous avez un compte utilisateur GitHub validé, entrez le nom d'utilisateur que vous avez choisi dans le champ à droite et appuyez sur `HACK` !

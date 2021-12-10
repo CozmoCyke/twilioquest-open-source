@@ -1,13 +1,13 @@
 {
-  "title": "Contributing to Open Source: Fork a Repository",
-  "description": "Learn to <strong>create a fork</strong> of an open source project, so you can work on your own modifications and contributions.",
+  "title": "Contribuer à l'Open Source : Forker un repo",
+  "description": "Apprenez à <strong>créer un fork</strong> d'un projet open source, afin de pouvoir travailler sur vos propres modifications et contributions",
   "show_ide": false,
   "validation_fields": [
     {
       "name": "prompt",
       "type": "prompt",
       "placeholder": "",
-      "label": "Click HACK once you've created your \"open-pixel-art\" fork!"
+      "label": "Cliquez sur HACK une fois que vous avez créé votre fork \"open-pixel-art\" !"
     }
   ],
   "rewards": {

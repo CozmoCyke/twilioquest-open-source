@@ -13,16 +13,16 @@ module.exports = async helper => {
 
     if (response.statusCode === 200) {
       return helper.success(
-        `We found your branch "${TQ_OPEN_PIXEL_ART_BRANCH}" on your remote repository for the user "${TQ_GITHUB_USERNAME}"!`
-      );
+        `Nous avons trouvé votre branche "${TQ_OPEN_PIXEL_ART_BRANCH}" sur votre répertoire distant pour l'utilisateur "${TQ_GITHUB_USERNAME}"!`
+      ) ;
     } else {
       helper.fail(
-        `We could not find your branch "${TQ_OPEN_PIXEL_ART_BRANCH}" on your remote repository "open-pixel-art" for the user "${TQ_GITHUB_USERNAME}"!`
-      );
+        `Nous n'avons pas pu trouver ta branche "${TQ_OPEN_PIXEL_ART_BRANCH}" sur ton dépôt distant "open-pixel-art" pour l'utilisateur "${TQ_GITHUB_USERNAME}"!`
+      ) ;
     }
   } catch (err) {
     helper.fail(
-      `Something went wrong when we tried to validate your Open Pixel Art branch!
+      `Quelque chose n'a pas fonctionné lorsque nous avons essayé de valider votre branche Open Pixel Art !
       
       ${err}`
     );

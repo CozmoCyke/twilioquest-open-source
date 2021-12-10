@@ -1,13 +1,13 @@
 {
-  "title": "Contributing to Open Source: Make a Branch",
-  "description": "Create a <strong>branch</strong> in your local git repository to contain the changes you are about to make to the project.",
+  "title": "Contribuer à l'Open Source : Créer une branche",
+  "description": "Créez une <strong>branche</strong> dans votre dépôt git local pour contenir les modifications que vous êtes sur le point d'apporter au projet.",
   "show_ide": false,
   "validation_fields": [
     {
       "name": "branchName",
       "type": "text",
       "placeholder": "dev-branch",
-      "label": "Enter the name of the branch you create here!"
+      "label": "Entrez le nom de la branche que vous créez ici !"
     }
   ],
   "rewards": {

@@ -1,5 +1,5 @@
-# Making Your Mark
+# Laissez votre marque
 
-Now, the fun part - making your changes to the project! To open this chest and claim the __Flame of Open Source__, you must edit source code in the `open-pixel-art` project and __commit your changes__ on your development branch. See the "Help" section for instructions on how to make your change.
+Maintenant, la partie amusante - apporter vos modifications au projet ! Pour ouvrir ce coffre et revendiquer la __Flamme de l'Open Source__, vous devez modifier le code source du projet `open-pixel-art` et __commettre vos changements__ sur votre branche de développement. Consultez la section "Aide" pour obtenir des instructions sur la façon d'effectuer vos modifications.
 
-Once you have __committed your changes__ to your development branch - `<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>` - click the *HACK* button.
+Une fois que vous avez __committé vos changements__ sur votre branche de développement - `<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>` - cliquez sur le bouton *HACK*.

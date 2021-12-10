@@ -1,10 +1,10 @@
-# Branching Out
+# Branchement extérieur
 
-To complete this challenge, [create a branch](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) in your local git repository. You can use the `git branch` command for this purpose:
+Pour relever ce défi, [créez une branche](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) dans votre dépôt git local. Vous pouvez utiliser la commande `git branch` à cette fin :
 
-```bash
-git branch my_branch_name
-git checkout my_branch_name
+``bash
+git branch mon_nom_de_branche
+git checkout mon_nom_de_branche
 ```
 
-When you have created a branch, paste the name of your new branch into the text field on the right and click *HACK*.
+Lorsque vous avez créé une branche, collez le nom de votre nouvelle branche dans le champ de texte à droite et cliquez sur *HACK*.
