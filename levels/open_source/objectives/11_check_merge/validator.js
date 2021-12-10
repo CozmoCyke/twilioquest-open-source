@@ -14,8 +14,8 @@ module.exports = async helper => {
 
     if (response.statusCode !== 200) {
       helper.fail(
-        `We could not find the Pull Request #${TQ_OPEN_PIXEL_ART_PR_NUMBER} on the Open Pixel Art remote repository"!`
-      );
+        `Nous n'avons pas trouvé la Pull Request #${TQ_OPEN_PIXEL_ART_PR_NUMBER} sur le dépôt distant d'Open Pixel Art"!`
+        ) ;
       return;
     }
 
@@ -25,24 +25,24 @@ module.exports = async helper => {
 
     if (isPrClosed && !isPrMerged) {
       helper.fail(
-        `We found the Pull Request #${TQ_OPEN_PIXEL_ART_PR_NUMBER} on the Open Pixel Art remote repository, but it was closed without being merged!`
-      );
-      return;
+        `Nous avons trouvé la Pull Request #${TQ_OPEN_PIXEL_ART_PR_NUMBER} sur le dépôt distant Open Pixel Art, mais elle a été fermée sans être fusionnée!`
+      ) ;
+      return ;
     }
 
     if (!isPrMerged) {
       helper.fail(
-        `We found the Pull Request #${TQ_OPEN_PIXEL_ART_PR_NUMBER} on the Open Pixel Art remote repository, but it has not been merged yet!`
-      );
-      return;
+        `Nous avons trouvé la Pull Request #${TQ_OPEN_PIXEL_ART_PR_NUMBER} sur le dépôt distant Open Pixel Art, mais elle n'a pas encore été fusionnée!`
+      ) ;
+      return ;
     }
 
     return helper.success(
-      `We found the Pull Request #${TQ_OPEN_PIXEL_ART_PR_NUMBER} on the Open Pixel Art remote repository and it has been merged! Congratulations on your open source contribution!`
-    );
+      `Nous avons trouvé la Pull Request #${TQ_OPEN_PIXEL_ART_PR_NUMBER} sur le dépôt distant Open Pixel Art et elle a été fusionnée ! Félicitations pour votre contribution open source!`
+    ) ;
   } catch (err) {
     helper.fail(
-      `Something went wrong when we tried to validate if your Open Pixel Art pull request was merged!
+      `Quelque chose n'a pas fonctionné lorsque nous avons essayé de valider la fusion de votre demande de publication Open Pixel Art !
       
       ${err}`
     );
